@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { MessageSquare, ThumbsUp, AlertTriangle, Lightbulb, Send, Star, Mail, Phone, Clock } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const Feedback = () => {
   const [formData, setFormData] = useState({
@@ -11,45 +12,46 @@ const Feedback = () => {
     rating: 0
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Preparar dados para envio por email
-    const emailData = {
-      to: 'joedison398@gmail.com',
-      subject: `[Lar Gustavo Nordlund] ${formData.type === 'sugestao' ? 'Sugestão' : formData.type === 'reclamacao' ? 'Reclamação' : 'Elogio'} - ${formData.name || 'Anônimo'}`,
-      body: `
-Tipo de Feedback: ${formData.type === 'sugestao' ? 'Sugestão' : formData.type === 'reclamacao' ? 'Reclamação' : 'Elogio'}
-${formData.rating > 0 ? `Avaliação: ${formData.rating} estrelas` : ''}
-
-Nome: ${formData.name || 'Não informado'}
-E-mail: ${formData.email || 'Não informado'}
-Telefone: ${formData.phone || 'Não informado'}
-
-Mensagem:
-${formData.message}
-
----
-Enviado através do site do Lar Gustavo Nordlund
-Data: ${new Date().toLocaleString('pt-BR')}
-      `.trim()
-    };
-
-    // Criar link mailto
-    const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+    setIsSubmitting(true);
     
-    // Abrir cliente de email
-    window.location.href = mailtoLink;
-    
-    alert('Sua mensagem foi enviada com sucesso! Agradecemos seu feedback.');
-    setFormData({
-      type: '',
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-      rating: 0
-    });
+    try {
+      const { error } = await supabase
+        .from('feedbacks')
+        .insert([
+          {
+            tipo: formData.type,
+            mensagem: formData.message,
+            nome: formData.name || null,
+            email: formData.email || null,
+            telefone: formData.phone || null,
+            estrelas: formData.type === 'elogio' ? formData.rating : null
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      alert('Feedback enviado com sucesso! Agradecemos sua colaboração.');
+      setFormData({
+        type: '',
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+        rating: 0
+      });
+    } catch (error) {
+      console.error('Erro ao enviar feedback:', error);
+      alert('Erro ao enviar feedback. Tente novamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -255,10 +257,11 @@ Data: ${new Date().toLocaleString('pt-BR')}
                 <Mail className="text-white" size={20} />
             <button
               type="submit"
-              className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2"
+              disabled={isSubmitting}
+              className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               <Send size={20} />
-              Enviar Feedback
+              {isSubmitting ? 'Enviando...' : 'Enviar Feedback'}
             </button>
 
             <p className="text-xs text-gray-500 text-center">
