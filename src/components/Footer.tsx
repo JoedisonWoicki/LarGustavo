@@ -27,7 +27,7 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="mt-2">
+          <div>
             <h4 className="text-xl font-bold mb-4">Redes Sociais</h4>
             <div className="space-y-3">
               <a 
