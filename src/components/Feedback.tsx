@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { MessageSquare, ThumbsUp, AlertTriangle, Lightbulb, Send, Star } from 'lucide-react';
+import { MessageSquare, ThumbsUp, AlertTriangle, Lightbulb, Send, Star, Mail, Phone, Clock } from 'lucide-react';
 
 const Feedback = () => {
   const [formData, setFormData] = useState({
@@ -13,7 +13,34 @@ const Feedback = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Feedback enviado:', formData);
+    
+    // Preparar dados para envio por email
+    const emailData = {
+      to: 'joedison398@gmail.com',
+      subject: `[Lar Gustavo Nordlund] ${formData.type === 'sugestao' ? 'Sugestão' : formData.type === 'reclamacao' ? 'Reclamação' : 'Elogio'} - ${formData.name || 'Anônimo'}`,
+      body: `
+Tipo de Feedback: ${formData.type === 'sugestao' ? 'Sugestão' : formData.type === 'reclamacao' ? 'Reclamação' : 'Elogio'}
+${formData.rating > 0 ? `Avaliação: ${formData.rating} estrelas` : ''}
+
+Nome: ${formData.name || 'Não informado'}
+E-mail: ${formData.email || 'Não informado'}
+Telefone: ${formData.phone || 'Não informado'}
+
+Mensagem:
+${formData.message}
+
+---
+Enviado através do site do Lar Gustavo Nordlund
+Data: ${new Date().toLocaleString('pt-BR')}
+      `.trim()
+    };
+
+    // Criar link mailto
+    const mailtoLink = `mailto:${emailData.to}?subject=${encodeURIComponent(emailData.subject)}&body=${encodeURIComponent(emailData.body)}`;
+    
+    // Abrir cliente de email
+    window.location.href = mailtoLink;
+    
     alert('Sua mensagem foi enviada com sucesso! Agradecemos seu feedback.');
     setFormData({
       type: '',
@@ -225,26 +252,26 @@ const Feedback = () => {
               </p>
             </div>
 
-            {/* Submit Button */}
+                <Mail className="text-white" size={20} />
             <button
-              type="submit"
-              className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2"
+              <h5 className="font-bold text-[#1f387f] mb-1">Email do Administrador</h5>
+              <p className="text-gray-600 text-sm">joedison398@gmail.com</p>
             >
               <Send size={20} />
               Enviar Feedback
             </button>
-
+                <Phone className="text-white" size={20} />
             <p className="text-xs text-gray-500 text-center">
-              * Campos obrigatórios. Seus dados serão tratados com confidencialidade.
-            </p>
+              <h5 className="font-bold text-[#1f387f] mb-1">Telefone</h5>
+              <p className="text-gray-600 text-sm">(51) 3386-1126</p>
           </form>
         </div>
 
         {/* Thank You Message */}
-        <div className="mt-12 bg-[#1f387f] rounded-2xl p-8 text-center text-white">
+                <Clock className="text-white" size={20} />
           <div className="flex justify-center mb-4">
-            <div className="bg-[#d7241f] w-16 h-16 rounded-full flex items-center justify-center">
-              <ThumbsUp className="text-white" size={28} />
+              <h5 className="font-bold text-[#1f387f] mb-1">Horário de Atendimento</h5>
+              <p className="text-gray-600 text-sm">Segunda a Sexta: 8h às 17h</p>
             </div>
           </div>
           <h3 className="text-3xl font-bold mb-4">
@@ -283,8 +310,8 @@ const Feedback = () => {
               <ThumbsUp className="text-white" size={20} />
             </div>
             <h4 className="font-bold text-[#1f387f] mb-2">Elogios</h4>
-            <p className="text-gray-600 text-sm">
-              Reconhecimentos motivam nossa equipe a manter a excelência no atendimento.
+              <strong>Importante:</strong> Ao enviar o formulário, seu cliente de email será aberto automaticamente 
+              com a mensagem pré-formatada para envio ao administrador.
             </p>
           </div>
         </div>
