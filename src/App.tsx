@@ -8,6 +8,7 @@ import Communication from './components/Communication';
 import Supporters from './components/Supporters';
 import Donations from './components/Donations';
 import Careers from './components/Careers';
+import Transparency from './components/Transparency';
 import Contact from './components/Contact';
 import Feedback from './components/Feedback';
 import Footer from './components/Footer';
@@ -24,6 +25,7 @@ function App() {
       <Supporters />
       <Donations />
       <Careers />
+      <Transparency />
       <Contact />
       <Feedback />
       <Footer />
