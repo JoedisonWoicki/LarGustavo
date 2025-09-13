@@ -70,6 +70,9 @@ const Header = () => {
             <a href="#trabalhe-conosco" className="text-gray-700 hover:text-[#d7241f] transition-colors font-medium">
               Trabalhe Conosco
             </a>
+            <a href="#feedback" className="text-gray-700 hover:text-[#d7241f] transition-colors font-medium">
+              Feedback
+            </a>
             <a href="#contato" className="bg-[#d7241f] text-white px-4 py-2 rounded-lg hover:bg-[#b81e1b] transition-colors font-medium">
               Contato
             </a>
@@ -122,6 +125,9 @@ const Header = () => {
               </a>
               <a href="#trabalhe-conosco" className="text-gray-700 hover:text-[#d7241f] transition-colors font-medium">
                 Trabalhe Conosco
+              </a>
+              <a href="#feedback" className="text-gray-700 hover:text-[#d7241f] transition-colors font-medium">
+                Feedback
               </a>
               <a href="#contato" className="bg-[#d7241f] text-white px-4 py-2 rounded-lg hover:bg-[#b81e1b] transition-colors font-medium text-center">
                 Contato

@@ -9,6 +9,7 @@ import Supporters from './components/Supporters';
 import Donations from './components/Donations';
 import Careers from './components/Careers';
 import Contact from './components/Contact';
+import Feedback from './components/Feedback';
 import Footer from './components/Footer';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
       <Donations />
       <Careers />
       <Contact />
+      <Feedback />
       <Footer />
     </div>
   );
