@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Users, Heart, Award, Upload, Send, CheckCircle } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const Careers = () => {
   const [formData, setFormData] = useState({
@@ -13,20 +14,50 @@ const Careers = () => {
     availability: ''
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Candidatura enviada:', formData);
-    alert('Candidatura enviada com sucesso! Entraremos em contato em breve.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      position: '',
-      experience: '',
-      education: '',
-      motivation: '',
-      availability: ''
-    });
+    
+    setIsSubmitting(true);
+    
+    try {
+      const { error } = await supabase
+        .from('vagas')
+        .insert([
+          {
+            nome: formData.name,
+            email: formData.email,
+            telefone: formData.phone,
+            cargo_interesse: formData.position,
+            formacao: formData.education,
+            experiencia: formData.experience || null,
+            disponibilidade: formData.availability,
+            motivo: formData.motivation
+          }
+        ]);
+
+      if (error) {
+        throw error;
+      }
+
+      alert('Candidatura enviada com sucesso! Entraremos em contato em breve.');
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        position: '',
+        experience: '',
+        education: '',
+        motivation: '',
+        availability: ''
+      });
+    } catch (error) {
+      console.error('Erro ao enviar candidatura:', error);
+      alert('Erro ao enviar candidatura. Tente novamente.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -323,10 +354,11 @@ const Careers = () => {
 
               <button
                 type="submit"
-                className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2"
+                disabled={isSubmitting}
+                className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 <Send size={20} />
-                Enviar Candidatura
+                {isSubmitting ? 'Enviando...' : 'Enviar Candidatura'}
               </button>
 
               <p className="text-xs text-gray-500 text-center">
