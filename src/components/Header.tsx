@@ -33,15 +33,8 @@ const Header = () => {
       {/* Main Header */}
       <div className="max-w-6xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="flex items-center gap-3">
-            <img 
-              src="/logotipo lar.jpg" 
-              alt="Lar Gustavo Nordlund" 
-              className="h-12 w-auto"
-            />
-            <div className="text-2xl font-bold text-[#1f387f]">
-              Lar Gustavo Nordlund
-            </div>
+          <div className="text-2xl font-bold text-[#1f387f]">
+            Lar Gustavo Nordlund
           </div>
 
           {/* Desktop Navigation */}
@@ -93,13 +86,8 @@ const Header = () => {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden mt-4 pb-4 border-t pt-4">
-            {/* Logo in Mobile Menu */}
-            <div className="flex items-center justify-center gap-2 mb-4 pb-4 border-b">
-              <img 
-                src="/logotipo lar.jpg" 
-                alt="Lar Gustavo Nordlund" 
-                className="h-8 w-auto"
-              />
+            {/* Title in Mobile Menu */}
+            <div className="text-center mb-4 pb-4 border-b">
               <div className="text-lg font-bold text-[#1f387f]">
                 Lar Gustavo Nordlund
               </div>
