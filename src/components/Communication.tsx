@@ -1,7 +1,49 @@
 import React from 'react';
+import { useState } from 'react';
 import { Quote, Star, Phone, Calendar, Users, ArrowRight } from 'lucide-react';
+import { supabase } from '../lib/supabase';
 
 const Communication = () => {
+  const [newsletterEmail, setNewsletterEmail] = useState('');
+  const [isSubmittingNewsletter, setIsSubmittingNewsletter] = useState(false);
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!newsletterEmail.trim()) {
+      alert('Por favor, digite um e-mail válido.');
+      return;
+    }
+    
+    setIsSubmittingNewsletter(true);
+    
+    try {
+      const { error } = await supabase
+        .from('newsletter')
+        .insert([
+          {
+            email: newsletterEmail.trim()
+          }
+        ]);
+
+      if (error) {
+        if (error.code === '23505') { // Unique constraint violation
+          alert('Este e-mail já está cadastrado em nossa newsletter!');
+        } else {
+          throw error;
+        }
+      } else {
+        alert('E-mail cadastrado com sucesso! Você receberá nossas atualizações.');
+        setNewsletterEmail('');
+      }
+    } catch (error) {
+      console.error('Erro ao cadastrar e-mail:', error);
+      alert('Erro ao cadastrar e-mail. Tente novamente.');
+    } finally {
+      setIsSubmittingNewsletter(false);
+    }
+  };
+
   const testimonials = [
     {
       name: 'Maria Silva',
@@ -131,16 +173,23 @@ const Communication = () => {
               Cadastre-se para receber notícias, eventos e informações importantes 
               sobre o Lar Gustavo Nordlund diretamente no seu e-mail.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <form onSubmit={handleNewsletterSubmit} className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
               <input 
                 type="email" 
                 placeholder="Seu e-mail"
+                value={newsletterEmail}
+                onChange={(e) => setNewsletterEmail(e.target.value)}
+                required
                 className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#d7241f]"
               />
-              <button className="bg-[#d7241f] px-6 py-3 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold">
-                Cadastrar
+              <button 
+                type="submit"
+                disabled={isSubmittingNewsletter}
+                className="bg-[#d7241f] px-6 py-3 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+              >
+                {isSubmittingNewsletter ? 'Cadastrando...' : 'Cadastrar'}
               </button>
-            </div>
+            </form>
           </div>
         </div>
         {/* Testimonials Section */}
