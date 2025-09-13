@@ -254,24 +254,25 @@ Data: ${new Date().toLocaleString('pt-BR')}
 
                 <Mail className="text-white" size={20} />
             <button
-              <h5 className="font-bold text-[#1f387f] mb-1">Email do Administrador</h5>
-              <p className="text-gray-600 text-sm">joedison398@gmail.com</p>
+              type="submit"
+              className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2"
             >
               <Send size={20} />
               Enviar Feedback
             </button>
-                <Phone className="text-white" size={20} />
+
             <p className="text-xs text-gray-500 text-center">
-              <h5 className="font-bold text-[#1f387f] mb-1">Telefone</h5>
-              <p className="text-gray-600 text-sm">(51) 3386-1126</p>
+              <strong>Importante:</strong> Ao enviar o formulário, seu cliente de email será aberto automaticamente 
+              com a mensagem pré-formatada para envio ao administrador.
+            </p>
           </form>
         </div>
 
         {/* Thank You Message */}
-                <Clock className="text-white" size={20} />
+        <div className="mt-16 bg-[#1f387f] rounded-2xl p-8 text-center text-white">
           <div className="flex justify-center mb-4">
-              <h5 className="font-bold text-[#1f387f] mb-1">Horário de Atendimento</h5>
-              <p className="text-gray-600 text-sm">Segunda a Sexta: 8h às 17h</p>
+            <div className="bg-[#d7241f] w-20 h-20 rounded-full flex items-center justify-center">
+              <MessageSquare className="text-white" size={36} />
             </div>
           </div>
           <h3 className="text-3xl font-bold mb-4">
@@ -284,35 +285,40 @@ Data: ${new Date().toLocaleString('pt-BR')}
         </div>
 
         {/* Contact Information */}
-        <div className="mt-12 grid md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-            <div className="bg-blue-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-              <Lightbulb className="text-white" size={20} />
-            </div>
-            <h4 className="font-bold text-[#1f387f] mb-2">Sugestões</h4>
-            <p className="text-gray-600 text-sm">
-              Suas ideias nos ajudam a melhorar continuamente nossos serviços e instalações.
+        <div className="mt-12 bg-white p-8 rounded-xl shadow-lg">
+          <div className="text-center mb-6">
+            <h4 className="text-2xl font-bold text-[#1f387f] mb-2">
+              Informações de Contato
+            </h4>
+            <p className="text-gray-600">
+              Entre em contato conosco através dos canais abaixo para esclarecimentos sobre seu feedback.
             </p>
           </div>
 
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-            <div className="bg-red-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-              <AlertTriangle className="text-white" size={20} />
+          <div className="grid md:grid-cols-3 gap-6 text-center">
+            <div>
+              <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Mail className="text-white" size={20} />
+              </div>
+              <h5 className="font-bold text-[#1f387f] mb-1">Email do Administrador</h5>
+              <p className="text-gray-600 text-sm">joedison398@gmail.com</p>
             </div>
-            <h4 className="font-bold text-[#1f387f] mb-2">Reclamações</h4>
-            <p className="text-gray-600 text-sm">
-              Relatórios de problemas são tratados com prioridade para resolução rápida.
-            </p>
-          </div>
-
-          <div className="bg-white p-6 rounded-xl shadow-lg text-center">
-            <div className="bg-green-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4">
-              <ThumbsUp className="text-white" size={20} />
+            
+            <div>
+              <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Phone className="text-white" size={20} />
+              </div>
+              <h5 className="font-bold text-[#1f387f] mb-1">Telefone</h5>
+              <p className="text-gray-600 text-sm">(51) 3386-1126</p>
             </div>
-            <h4 className="font-bold text-[#1f387f] mb-2">Elogios</h4>
-              <strong>Importante:</strong> Ao enviar o formulário, seu cliente de email será aberto automaticamente 
-              com a mensagem pré-formatada para envio ao administrador.
-            </p>
+            
+            <div>
+              <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                <Clock className="text-white" size={20} />
+              </div>
+              <h5 className="font-bold text-[#1f387f] mb-1">Horário de Atendimento</h5>
+              <p className="text-gray-600 text-sm">Segunda a Sexta: 8h às 17h</p>
+            </div>
           </div>
         </div>
       </div>
