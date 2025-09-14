@@ -41,10 +41,10 @@ const Footer = () => {
                 href="https://www.facebook.com/largustavonordlund" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group hover-lift"
+                className="flex items-center gap-3 text-slate-300 hover:text-[#0e28be] transition-colors group hover-lift"
               >
                 <div className="bg-gradient-to-r from-[#0e28be] to-blue-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-blue-500 group-hover:to-blue-400 transition-colors animate-pulse-glow">
-                  <Facebook size={16} />
+                  <Facebook size={16} className="text-white" />
                 </div>
                 <span>Facebook</span>
               </a>
@@ -53,10 +53,10 @@ const Footer = () => {
                 href="https://www.instagram.com/largustavonordlund" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group hover-lift"
+                className="flex items-center gap-3 text-slate-300 hover:text-[#0e28be] transition-colors group hover-lift"
               >
-                <div className="bg-gradient-to-r from-purple-500 to-pink-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-purple-400 group-hover:to-pink-400 transition-colors animate-pulse-glow">
-                  <Instagram size={16} />
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-purple-400 group-hover:to-pink-400 transition-colors animate-pulse-glow">
+                  <Instagram size={16} className="text-white" />
                 </div>
                 <span>Instagram</span>
               </a>
@@ -65,10 +65,10 @@ const Footer = () => {
                 href="https://www.youtube.com/@largustavonordlund" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group hover-lift"
+                className="flex items-center gap-3 text-slate-300 hover:text-[#0e28be] transition-colors group hover-lift"
               >
-                <div className="bg-gradient-to-r from-red-600 to-red-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-red-500 group-hover:to-red-400 transition-colors animate-pulse-glow">
-                  <Youtube size={16} />
+                <div className="bg-gradient-to-r from-[#0e28be] to-red-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-red-500 group-hover:to-red-400 transition-colors animate-pulse-glow">
+                  <Youtube size={16} className="text-white" />
                 </div>
                 <span>YouTube</span>
               </a>
@@ -77,10 +77,10 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/largustavonordlund" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group hover-lift"
+                className="flex items-center gap-3 text-slate-300 hover:text-[#0e28be] transition-colors group hover-lift"
               >
                 <div className="bg-gradient-to-r from-[#0e28be] to-blue-600 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-blue-600 group-hover:to-blue-500 transition-colors animate-pulse-glow">
-                  <Linkedin size={16} />
+                  <Linkedin size={16} className="text-white" />
                 </div>
                 <span>LinkedIn</span>
               </a>
@@ -128,10 +128,10 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/20 mt-12 pt-8 text-center">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-slate-300">
+            <div className="text-white">
               © 2025 Lar Gustavo Nordlund. Todos os direitos reservados.
             </div>
-            <div className="text-slate-300">
+            <div className="text-white">
               Feito com <Heart className="inline text-[#0e28be] animate-pulse-glow" size={16} /> para cuidar de quem você ama
             </div>
           </div>
