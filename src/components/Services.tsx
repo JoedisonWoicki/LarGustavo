@@ -42,13 +42,20 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="py-20 bg-white">
+    <section id="servicos" className="py-20 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-purple-900">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M20%2020c0-11.046-8.954-20-20-20v20h20z%22/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-[#6c70e5] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
+      </div>
+      
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black text-[#1f387f] mb-4 tracking-tight">
+          <h2 className="text-5xl font-black gradient-text mb-4 tracking-tight animate-fade-in-up">
             Nossos Serviços
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             Oferecemos assistência integral com uma abordagem multidisciplinar, 
             garantindo o melhor cuidado em todas as áreas da vida dos nossos residentes.
           </p>
@@ -56,24 +63,24 @@ const Services = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-gray-50 p-8 rounded-xl hover:shadow-lg transition-shadow">
-              <div className="bg-[#d7241f] w-16 h-16 rounded-full flex items-center justify-center mb-6">
+            <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
+              <div className="bg-gradient-to-r from-[#6c70e5] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mb-6 animate-pulse-glow">
                 <service.icon className="text-white" size={28} />
               </div>
               
-              <h3 className="text-xl font-bold text-[#1f387f] mb-4">
+              <h3 className="text-xl font-bold text-white mb-4 text-glow">
                 {service.title}
               </h3>
               
-              <p className="text-gray-600 mb-6 leading-relaxed">
+              <p className="text-slate-300 mb-6 leading-relaxed">
                 {service.description}
               </p>
 
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2 text-sm">
-                    <div className="w-2 h-2 bg-[#d7241f] rounded-full"></div>
-                    <span className="text-gray-600">{feature}</span>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#6c70e5] to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <span className="text-slate-400">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -81,17 +88,17 @@ const Services = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-[#1f387f] rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <h3 className="text-3xl font-bold mb-4">
             Assistência Integral Personalizada
           </h3>
-          <p className="text-xl text-blue-100 mb-6">
+          <p className="text-xl text-slate-300 mb-6">
             Cada residente recebe um plano de cuidados personalizado, desenvolvido 
             pela nossa equipe multidisciplinar para atender suas necessidades específicas.
           </p>
           <a 
             href="#contato" 
-            className="inline-block bg-[#d7241f] text-white px-8 py-4 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold"
+            className="btn-gradient text-white px-8 py-4 rounded-lg font-semibold hover-lift"
           >
             Agende uma Visita
           </a>

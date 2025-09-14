@@ -70,13 +70,20 @@ const Supporters = () => {
     ];
 
   return (
-    <section id="apoiadores" className="py-20 bg-white">
+    <section id="apoiadores" className="py-20 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-purple-900">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M20%2020c0-11.046-8.954-20-20-20v20h20z%22/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-[#6c70e5] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
+      </div>
+      
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black text-[#1f387f] mb-4 tracking-tight">
+          <h2 className="text-5xl font-black gradient-text mb-4 tracking-tight animate-fade-in-up">
             Nossos Apoiadores
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             Agradecemos a todos os parceiros e apoiadores que tornam possível 
             nossa missão de cuidar com amor e dedicação há mais de 70 anos.
           </p>
@@ -90,7 +97,8 @@ const Supporters = () => {
                 href={supporter.website}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-gray-50 p-6 rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
+                className="block glass-dark p-6 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in transition-all duration-300 hover:scale-105" 
+                style={{animationDelay: `${index * 0.1}s`}}
               >
                 <div className="aspect-square flex items-center justify-center mb-4">
                   <img 
@@ -99,10 +107,10 @@ const Supporters = () => {
                     className="max-w-full max-h-full object-contain filter group-hover:brightness-110 transition-all"
                   />
                 </div>
-                <h3 className="font-bold text-[#1f387f] text-center mb-2 group-hover:text-[#d7241f] transition-colors">
+                <h3 className="font-bold text-white text-center mb-2 group-hover:text-[#6c70e5] transition-colors text-glow">
                   {supporter.name}
                 </h3>
-                <p className="text-gray-600 text-sm text-center">
+                <p className="text-slate-300 text-sm text-center">
                   {supporter.description}
                 </p>
               </a>
@@ -111,9 +119,9 @@ const Supporters = () => {
         </div>
 
         {/* Partnership Call to Action */}
-        <div className="bg-gradient-to-r from-[#1f387f] to-[#2d4a8f] rounded-2xl p-8 text-center text-white">
+        <div className="glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <div className="flex justify-center mb-6">
-            <div className="bg-[#d7241f] w-20 h-20 rounded-full flex items-center justify-center">
+            <div className="bg-gradient-to-r from-[#6c70e5] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
               <Handshake className="text-white" size={36} />
             </div>
           </div>
@@ -121,32 +129,32 @@ const Supporters = () => {
           <h3 className="text-3xl font-bold mb-4">
             Seja Nosso Parceiro
           </h3>
-          <p className="text-xl text-blue-100 mb-6 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 mb-6 max-w-3xl mx-auto">
             Empresas e organizações que desejam apoiar nossa causa são sempre bem-vindas. 
             Juntos, podemos fazer ainda mais pela qualidade de vida dos idosos.
           </p>
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white/10 p-4 rounded-lg">
-              <Heart className="text-[#d7241f] mx-auto mb-2" size={24} />
-              <div className="font-bold text-[#d7241f] mb-1">Responsabilidade Social</div>
-              <div className="text-blue-100 text-sm">Demonstre o compromisso da sua empresa com causas sociais</div>
+              <Heart className="text-[#6c70e5] mx-auto mb-2 animate-pulse-glow" size={24} />
+              <div className="font-bold gradient-text mb-1">Responsabilidade Social</div>
+              <div className="text-slate-300 text-sm">Demonstre o compromisso da sua empresa com causas sociais</div>
             </div>
             <div className="bg-white/10 p-4 rounded-lg">
-              <Heart className="text-[#d7241f] mx-auto mb-2" size={24} />
-              <div className="font-bold text-[#d7241f] mb-1">Impacto Real</div>
-              <div className="text-blue-100 text-sm">Sua parceria gera impacto direto na vida dos idosos</div>
+              <Heart className="text-[#6c70e5] mx-auto mb-2 animate-pulse-glow" size={24} />
+              <div className="font-bold gradient-text mb-1">Impacto Real</div>
+              <div className="text-slate-300 text-sm">Sua parceria gera impacto direto na vida dos idosos</div>
             </div>
             <div className="bg-white/10 p-4 rounded-lg">
-              <Heart className="text-[#d7241f] mx-auto mb-2" size={24} />
-              <div className="font-bold text-[#d7241f] mb-1">Reconhecimento</div>
-              <div className="text-blue-100 text-sm">Sua marca associada a uma instituição respeitada</div>
+              <Heart className="text-[#6c70e5] mx-auto mb-2 animate-pulse-glow" size={24} />
+              <div className="font-bold gradient-text mb-1">Reconhecimento</div>
+              <div className="text-slate-300 text-sm">Sua marca associada a uma instituição respeitada</div>
             </div>
           </div>
 
           <a 
             href="#contato" 
-            className="inline-block bg-[#d7241f] text-white px-8 py-4 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold"
+            className="btn-gradient text-white px-8 py-4 rounded-lg font-semibold hover-lift"
           >
             Quero Ser Parceiro
           </a>
@@ -154,14 +162,14 @@ const Supporters = () => {
 
         {/* Thank You Message */}
         <div className="mt-16 text-center">
-          <div className="bg-gray-50 p-8 rounded-xl">
+          <div className="glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-fade-in-up">
             <div className="flex justify-center mb-4">
-              <Heart className="text-[#d7241f]" size={32} />
+              <Heart className="text-[#6c70e5] animate-pulse-glow" size={32} />
             </div>
-            <h4 className="text-2xl font-bold text-[#1f387f] mb-4">
+            <h4 className="text-2xl font-bold text-white mb-4 text-glow">
               Gratidão aos Nossos Apoiadores
             </h4>
-            <p className="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-slate-300 max-w-2xl mx-auto leading-relaxed">
               Cada parceria representa muito mais que apoio financeiro ou material. 
               Representa a união de esforços para garantir dignidade, carinho e qualidade 
               de vida para quem dedicou suas vidas construindo nossa sociedade.
