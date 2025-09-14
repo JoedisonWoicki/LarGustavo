@@ -97,13 +97,20 @@ const Communication = () => {
   ];
 
   return (
-    <section id="comunicacao" className="py-20 bg-gray-50">
+    <section id="comunicacao" className="py-20 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-purple-900">
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M20%2020c0-11.046-8.954-20-20-20v20h20z%22/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-[#0e28be] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
+      </div>
+      
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black text-[#1f387f] mb-4 tracking-tight">
+          <h2 className="text-5xl font-black gradient-text mb-4 tracking-tight animate-fade-in-up">
             Comunicação
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
             Mantemos uma comunicação transparente e constante com as famílias, 
             garantindo que todos estejam sempre informados sobre o bem-estar dos residentes.
           </p>
@@ -112,17 +119,17 @@ const Communication = () => {
         {/* News Section */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-[#1f387f] mb-4">
+            <h3 className="text-4xl font-bold gradient-text mb-4 animate-fade-in-up">
               Notícias e Atualizações
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               Fique por dentro das novidades, eventos e melhorias do Lar Gustavo Nordlund.
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 mb-12">
             {news.map((article, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={index} className="glass-dark rounded-xl shadow-2xl overflow-hidden hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="relative">
                   <img 
                     src={article.image} 
@@ -143,19 +150,19 @@ const Communication = () => {
                 
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
-                    <Calendar size={16} />
+                    <Calendar size={16} className="text-[#0e28be] animate-pulse-glow" />
                     <span>{article.date}</span>
                   </div>
                   
-                  <h4 className="text-xl font-bold text-[#1f387f] mb-3 leading-tight">
+                  <h4 className="text-xl font-bold text-white mb-3 leading-tight text-glow">
                     {article.title}
                   </h4>
                   
-                  <p className="text-gray-600 mb-4 leading-relaxed">
+                  <p className="text-slate-300 mb-4 leading-relaxed">
                     {article.excerpt}
                   </p>
                   
-                  <button className="flex items-center gap-2 text-[#d7241f] font-semibold hover:gap-3 transition-all">
+                  <button className="flex items-center gap-2 text-[#0e28be] font-semibold hover:gap-3 transition-all hover-glow">
                     <span>Leia mais</span>
                     <ArrowRight size={16} />
                   </button>
@@ -195,10 +202,10 @@ const Communication = () => {
         {/* Testimonials Section */}
         <div className="mb-16">
           <div className="text-center mb-12">
-            <h3 className="text-4xl font-bold text-[#1f387f] mb-4">
+            <h3 className="text-4xl font-bold gradient-text mb-4 animate-fade-in-up">
               Depoimentos das Famílias
             </h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="text-lg text-slate-300 max-w-2xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               A confiança das famílias é nosso maior patrimônio. 
               Veja o que dizem sobre nosso cuidado e dedicação.
             </p>
