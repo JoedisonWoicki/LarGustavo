@@ -190,7 +190,6 @@ O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos
         </div>
       </div>
     </section>
-  )
   );
 };
 
