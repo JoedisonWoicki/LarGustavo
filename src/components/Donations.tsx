@@ -160,7 +160,7 @@ const Donations = () => {
           </div>
 
           <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
-            <p className="text-black-200 text-sm">
+            <p className="text-yellow-200 text-sm">
               <strong>Importante:</strong> Após realizar sua doação, entre em contato conosco para confirmarmos o recebimento 
               e emitirmos o comprovante para dedução no Imposto de Renda, se aplicável.
             </p>
@@ -189,10 +189,10 @@ const Donations = () => {
 
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
                 <div className="flex items-start gap-2">
-                  <span className="text-breaklack-600 font-bold">⚠️</span>
+                  <span className="text-yellow-600 font-bold">⚠️</span>
                   <div>
                     <p className="font-semibold text-yellow-200 mb-1">Importante:</p>
-                    <p className="text-black-100 text-sm">
+                    <p className="text-yellow-100 text-sm">
                       Sempre confira se o seu CPF foi registrado corretamente na nota. 
                       Sem ele, você pode ficar de fora dos sorteios e das doações às entidades.
                     </p>
