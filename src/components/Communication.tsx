@@ -185,7 +185,7 @@ const Communication = () => {
               <button 
                 type="submit"
                 disabled={isSubmittingNewsletter}
-                className="bg-[#d7241f] px-6 py-3 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                className="btn-gradient px-6 py-3 rounded-lg font-semibold disabled:opacity-50 disabled:cursor-not-allowed hover-lift"
               >
                 {isSubmittingNewsletter ? 'Cadastrando...' : 'Cadastrar'}
               </button>
