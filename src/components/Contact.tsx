@@ -65,41 +65,41 @@ const Contact = () => {
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
-          <div>
-            <h3 className="text-2xl font-bold text-[#1f387f] mb-8">
+          <div className="glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-slide-in-left">
+            <h3 className="text-2xl font-bold text-white mb-8 text-glow">
               Informações de Contato
             </h3>
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1f387f] mb-1">Telefone</h4>
-                  <p className="text-gray-600">(51) 3386-1126</p>
-                  <p className="text-gray-600">(51) 99999-8888</p>
+                  <h4 className="font-semibold text-white mb-1 text-glow">Telefone</h4>
+                  <p className="text-slate-300">(51) 3386-1126</p>
+                  <p className="text-slate-300">(51) 99999-8888</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1f387f] mb-1">E-mail</h4>
-                  <p className="text-gray-600">contato@largustavonordlund.com.br</p>
-                  <p className="text-gray-600">rhrecrutamento@largustavonordlund.org.br</p>
+                  <h4 className="font-semibold text-white mb-1 text-glow">E-mail</h4>
+                  <p className="text-slate-300">contato@largustavonordlund.com.br</p>
+                  <p className="text-slate-300">rhrecrutamento@largustavonordlund.org.br</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1f387f] mb-1">Endereço</h4>
-                  <p className="text-gray-600">
+                  <h4 className="font-semibold text-white mb-1 text-glow">Endereço</h4>
+                  <p className="text-slate-300">
                      R. Dezenove de Fevereiro, 426 - Rubem Berta<br />
                     Porto Alegre, RS - CEP 91270-450
                   </p>
@@ -107,21 +107,21 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Clock className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-[#1f387f] mb-1">Horário de Visitas</h4>
-                  <p className="text-gray-600">As visitas estão disponíveis nas terças, quintas e sábados, das 14h às 17h.
+                  <h4 className="font-semibold text-white mb-1 text-glow">Horário de Visitas</h4>
+                  <p className="text-slate-300">As visitas estão disponíveis nas terças, quintas e sábados, das 14h às 17h.
 </p>
                   
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-[#1f387f] rounded-xl text-white">
+            <div className="mt-8 p-6 glass rounded-xl text-white shadow-2xl hover-lift">
               <h4 className="font-bold mb-2">Agende uma Visita</h4>
-              <p className="text-blue-100">
+              <p className="text-slate-300">
                 Convidamos você e sua família para conhecer nossas instalações 
                 e conversar com nossa equipe. Entre em contato para agendar.
               </p>
@@ -129,14 +129,14 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-lg">
-            <h3 className="text-2xl font-bold text-[#1f387f] mb-6">
+          <div className="glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-slide-in-right">
+            <h3 className="text-2xl font-bold text-white mb-6 text-glow">
               Envie uma Mensagem
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
                   Nome Completo
                 </label>
                 <input
@@ -146,12 +146,12 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
                   E-mail
                 </label>
                 <input
@@ -161,12 +161,12 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                 />
               </div>
 
               <div>
-                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2">
                   Telefone
                 </label>
                 <input
@@ -175,12 +175,12 @@ const Contact = () => {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-semibold text-white mb-2">
                   Mensagem
                 </label>
                 <textarea
@@ -190,7 +190,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent resize-vertical"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent resize-vertical text-white placeholder-slate-400"
                   placeholder="Como podemos ajudá-lo?"
                 ></textarea>
               </div>

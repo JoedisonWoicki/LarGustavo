@@ -125,83 +125,83 @@ const Careers = () => {
         {/* Benefits */}
         <div className="grid md:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
-            <div key={index} className="text-center bg-gray-50 p-6 rounded-xl">
-              <div className="bg-[#d7241f] w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4">
+            <div key={index} className="text-center glass-dark p-6 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
+              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
                 <benefit.icon className="text-white" size={24} />
               </div>
-              <h4 className="font-bold text-[#1f387f] mb-2">{benefit.title}</h4>
-              <p className="text-gray-600 text-sm">{benefit.description}</p>
+              <h4 className="font-bold text-white mb-2 text-glow">{benefit.title}</h4>
+              <p className="text-slate-300 text-sm">{benefit.description}</p>
             </div>
           ))}
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Why Work With Us */}
-          <div>
-            <h3 className="text-3xl font-bold text-[#1f387f] mb-6">
+          <div className="glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-slide-in-left">
+            <h3 className="text-3xl font-bold text-white mb-6 text-glow">
               Por que Trabalhar Conosco?
             </h3>
             
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="bg-[#d7241f] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
                   <Heart className="text-white" size={16} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1f387f] mb-2">Propósito Significativo</h4>
-                  <p className="text-gray-600">
+                  <h4 className="font-bold text-white mb-2 text-glow">Propósito Significativo</h4>
+                  <p className="text-slate-300">
                     Trabalhe com propósito, fazendo a diferença na vida de idosos e suas famílias todos os dias.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="bg-[#d7241f] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
                   <Award className="text-white" size={16} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1f387f] mb-2">Tradição e Estabilidade</h4>
-                  <p className="text-gray-600">
+                  <h4 className="font-bold text-white mb-2 text-glow">Tradição e Estabilidade</h4>
+                  <p className="text-slate-300">
                     Mais de 70 anos de história e solidez no mercado, oferecendo segurança e estabilidade profissional.
                   </p>
                 </div>
               </div>
 
               <div className="flex gap-4">
-                <div className="bg-[#d7241f] w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
                   <Users className="text-white" size={16} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-[#1f387f] mb-2">Equipe Multidisciplinar</h4>
-                  <p className="text-gray-600">
+                  <h4 className="font-bold text-white mb-2 text-glow">Equipe Multidisciplinar</h4>
+                  <p className="text-slate-300">
                     Trabalhe ao lado de profissionais qualificados em um ambiente colaborativo e de aprendizado contínuo.
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-[#1f387f] rounded-xl text-white">
+            <div className="mt-8 p-6 glass rounded-xl text-white shadow-2xl hover-lift">
               <h4 className="font-bold mb-2">Oportunidades Disponíveis</h4>
-              <p className="text-blue-100 mb-4">
+              <p className="text-slate-300 mb-4">
                 Estamos sempre em busca de profissionais dedicados para integrar nossa equipe. 
                 Envie seu currículo mesmo que não haja vagas abertas no momento.
               </p>
-              <div className="text-sm text-blue-200">
+              <div className="text-sm text-slate-400">
                 Áreas em constante recrutamento: Enfermagem, Cuidadores, Fisioterapia, Nutrição
               </div>
             </div>
           </div>
 
           {/* Application Form */}
-          <div className="bg-gray-50 p-8 rounded-xl">
-            <h3 className="text-2xl font-bold text-[#1f387f] mb-6">
+          <div className="glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-slide-in-right">
+            <h3 className="text-2xl font-bold text-white mb-6 text-glow">
               Candidate-se
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
                     Nome Completo *
                   </label>
                   <input
@@ -211,12 +211,12 @@ const Careers = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                    className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
                     E-mail *
                   </label>
                   <input
@@ -226,14 +226,14 @@ const Careers = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                    className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                   />
                 </div>
               </div>
 
               <div className="grid md:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2">
                     Telefone *
                   </label>
                   <input
@@ -243,12 +243,12 @@ const Careers = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                    className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="position" className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="position" className="block text-sm font-semibold text-white mb-2">
                     Cargo de Interesse *
                   </label>
                   <select
@@ -257,7 +257,7 @@ const Careers = () => {
                     value={formData.position}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                    className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white"
                   >
                     <option value="">Selecione um cargo</option>
                     {positions.map((position, index) => (
@@ -268,7 +268,7 @@ const Careers = () => {
               </div>
 
               <div>
-                <label htmlFor="education" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="education" className="block text-sm font-semibold text-white mb-2">
                   Formação Acadêmica *
                 </label>
                 <input
@@ -279,12 +279,12 @@ const Careers = () => {
                   onChange={handleChange}
                   required
                   placeholder="Ex: Técnico em Enfermagem, Graduação em Fisioterapia..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                 />
               </div>
 
               <div>
-                <label htmlFor="experience" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="experience" className="block text-sm font-semibold text-white mb-2">
                   Experiência Profissional
                 </label>
                 <textarea
@@ -294,12 +294,12 @@ const Careers = () => {
                   onChange={handleChange}
                   rows={3}
                   placeholder="Descreva sua experiência profissional relevante..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent resize-vertical"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent resize-vertical text-white placeholder-slate-400"
                 ></textarea>
               </div>
 
               <div>
-                <label htmlFor="availability" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="availability" className="block text-sm font-semibold text-white mb-2">
                   Disponibilidade de Horário *
                 </label>
                 <select
@@ -308,7 +308,7 @@ const Careers = () => {
                   value={formData.availability}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white"
                 >
                   <option value="">Selecione sua disponibilidade</option>
                   <option value="integral">Período Integral (8h)</option>
@@ -322,7 +322,7 @@ const Careers = () => {
               </div>
 
               <div>
-                <label htmlFor="motivation" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="motivation" className="block text-sm font-semibold text-white mb-2">
                   Por que deseja trabalhar conosco? *
                 </label>
                 <textarea
@@ -333,21 +333,21 @@ const Careers = () => {
                   required
                   rows={4}
                   placeholder="Conte-nos sobre sua motivação para trabalhar no cuidado de idosos..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent resize-vertical"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent resize-vertical text-white placeholder-slate-400"
                 ></textarea>
               </div>
 
-              <div className="bg-blue-50 p-4 rounded-lg">
+              <div className="glass p-4 rounded-lg shadow-2xl">
                 <div className="flex items-center gap-2 mb-2">
-                  <Upload className="text-[#1f387f]" size={20} />
-                  <span className="font-semibold text-[#1f387f]">Anexar Currículo</span>
+                  <Upload className="text-[#0e28be] animate-pulse-glow" size={20} />
+                  <span className="font-semibold text-white">Anexar Currículo</span>
                 </div>
                 <input
                   type="file"
                   accept=".pdf,.doc,.docx"
-                  className="w-full text-sm text-gray-600 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-[#1f387f] file:text-white file:font-semibold hover:file:bg-[#2d4a8f] file:cursor-pointer"
+                  className="w-full text-sm text-slate-300 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:bg-[#0e28be] file:text-white file:font-semibold hover:file:bg-[#1a3bc7] file:cursor-pointer"
                 />
-                <p className="text-xs text-gray-500 mt-1">
+                <p className="text-xs text-slate-400 mt-1">
                   Formatos aceitos: PDF, DOC, DOCX (máx. 5MB)
                 </p>
               </div>
@@ -361,7 +361,7 @@ const Careers = () => {
                 {isSubmitting ? 'Enviando...' : 'Enviar Candidatura'}
               </button>
 
-              <p className="text-xs text-gray-500 text-center">
+              <p className="text-xs text-slate-400 text-center">
                 * Campos obrigatórios. Seus dados serão tratados com confidencialidade.
               </p>
             </form>
@@ -369,22 +369,22 @@ const Careers = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="mt-16 bg-gradient-to-r from-[#1f387f] to-[#2d4a8f] rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <h3 className="text-3xl font-bold mb-4">
             Faça Parte da Nossa Família
           </h3>
-          <p className="text-xl text-blue-100 mb-6">
+          <p className="text-xl text-slate-300 mb-6">
             Se você tem paixão pelo cuidado de idosos e quer fazer a diferença na vida das pessoas, 
             queremos conhecê-lo. Venha construir uma carreira com propósito conosco.
           </p>
           <div className="grid md:grid-cols-2 gap-6 mt-8">
             <div className="bg-white/10 p-4 rounded-lg">
-              <div className="font-bold text-[#d7241f] text-lg">Processo Seletivo</div>
-              <div className="text-blue-100 text-sm">Análise de currículo → Entrevista → Integração</div>
+              <div className="font-bold gradient-text text-lg">Processo Seletivo</div>
+              <div className="text-slate-300 text-sm">Análise de currículo → Entrevista → Integração</div>
             </div>
             <div className="bg-white/10 p-4 rounded-lg">
-              <div className="font-bold text-[#d7241f] text-lg">Contato RH</div>
-              <div className="text-blue-100 text-sm">rhrecrutamento@largustavonordlund.org.br</div>
+              <div className="font-bold gradient-text text-lg">Contato RH</div>
+              <div className="text-slate-300 text-sm">rhrecrutamento@largustavonordlund.org.br</div>
             </div>
           </div>
         </div>

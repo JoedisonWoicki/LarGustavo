@@ -51,7 +51,7 @@ const Hero = () => {
               </div>
               <div className="text-center glass-dark p-4 rounded-xl hover-lift">
                 <div className="flex justify-center mb-2 animate-pulse-glow" style={{animationDelay: '0.5s'}}>
-                  <Users className="text-blue-400" size={32} />
+                  <Users className="text-[#0e28be]" size={32} />
                 </div>
                 <div className="text-2xl font-bold text-white">70+</div>
                 <div className="text-slate-300 text-sm">Residentes</div>
@@ -67,14 +67,14 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-slide-in-right">
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl blur-2xl opacity-20 animate-pulse-glow"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#0e28be] to-purple-600 rounded-2xl blur-2xl opacity-20 animate-pulse-glow"></div>
             <img 
               src="public/Captura de tela 2025-07-16 155103.png" 
               alt="Cuidado com idosos" 
               className="relative z-10 rounded-2xl shadow-2xl hover-lift"
             />
             <div className="absolute -bottom-6 -left-6 glass p-6 rounded-xl shadow-2xl animate-float">
-              <div className="text-blue-400 text-sm font-semibold mb-1">Localização</div>
+              <div className="text-[#0e28be] text-sm font-semibold mb-1">Localização</div>
               <div className="text-white">Porto Alegre, RS</div>
             </div>
           </div>

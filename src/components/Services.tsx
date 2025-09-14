@@ -64,7 +64,7 @@ const Services = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="bg-gradient-to-r from-[#6c70e5] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mb-6 animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mb-6 animate-pulse-glow">
                 <service.icon className="text-white" size={28} />
               </div>
               
@@ -79,7 +79,7 @@ const Services = () => {
               <ul className="space-y-2">
                 {service.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center gap-2 text-sm">
-                    <div className="w-2 h-2 bg-gradient-to-r from-[#6c70e5] to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span className="text-slate-400">{feature}</span>
                   </li>
                 ))}

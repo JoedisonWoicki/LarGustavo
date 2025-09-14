@@ -43,7 +43,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group hover-lift"
               >
-                <div className="bg-gradient-to-r from-blue-600 to-blue-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-blue-500 group-hover:to-blue-400 transition-colors animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#0e28be] to-blue-500 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-blue-500 group-hover:to-blue-400 transition-colors animate-pulse-glow">
                   <Facebook size={16} />
                 </div>
                 <span>Facebook</span>
@@ -79,7 +79,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-slate-300 hover:text-white transition-colors group hover-lift"
               >
-                <div className="bg-gradient-to-r from-blue-700 to-blue-600 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-blue-600 group-hover:to-blue-500 transition-colors animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#0e28be] to-blue-600 w-8 h-8 rounded-full flex items-center justify-center group-hover:from-blue-600 group-hover:to-blue-500 transition-colors animate-pulse-glow">
                   <Linkedin size={16} />
                 </div>
                 <span>LinkedIn</span>
@@ -91,17 +91,17 @@ const Footer = () => {
           <div className="md:col-span-1">
             <h4 className="text-xl font-bold mb-4">Links Rápidos</h4>
             <ul className="space-y-2">
-              <li><a href="#inicio" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Início</a></li>
-              <li><a href="#sobre" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Sobre Nós</a></li>
-              <li><a href="#servicos" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Serviços</a></li>
-              <li><a href="#equipe" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Equipe</a></li>
-              <li><a href="#comunicacao" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Comunicação</a></li>
-              <li><a href="#apoiadores" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Apoiadores</a></li>
-              <li><a href="#doacoes" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Como Doar</a></li>
-              <li><a href="#trabalhe-conosco" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Trabalhe Conosco</a></li>
-              <li><a href="#transparencia" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Transparência</a></li>
-              <li><a href="#feedback" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Feedback</a></li>
-              <li><a href="#contato" className="text-slate-300 hover:text-[#6c70e5] transition-colors hover-glow">Contato</a></li>
+              <li><a href="#inicio" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Início</a></li>
+              <li><a href="#sobre" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Sobre Nós</a></li>
+              <li><a href="#servicos" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Serviços</a></li>
+              <li><a href="#equipe" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Equipe</a></li>
+              <li><a href="#comunicacao" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Comunicação</a></li>
+              <li><a href="#apoiadores" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Apoiadores</a></li>
+              <li><a href="#doacoes" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Como Doar</a></li>
+              <li><a href="#trabalhe-conosco" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Trabalhe Conosco</a></li>
+              <li><a href="#transparencia" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Transparência</a></li>
+              <li><a href="#feedback" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Feedback</a></li>
+              <li><a href="#contato" className="text-slate-300 hover:text-[#0e28be] transition-colors hover-glow">Contato</a></li>
             </ul>
           </div>
 
@@ -110,15 +110,15 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Contato</h4>
             <div className="space-y-3">
               <div className="flex items-center gap-2 text-slate-300 hover-glow">
-                <Phone size={16} className="text-[#6c70e5] animate-pulse-glow" />
+                <Phone size={16} className="text-[#0e28be] animate-pulse-glow" />
                 <span>(51) 3386-1125</span>
               </div>
               <div className="flex items-center gap-2 text-slate-300 hover-glow">
-                <Mail size={16} className="text-[#6c70e5] animate-pulse-glow" />
+                <Mail size={16} className="text-[#0e28be] animate-pulse-glow" />
                 <span>contato@largustavonordlund.com.br</span>
               </div>
               <div className="flex items-start gap-2 text-slate-300 hover-glow">
-                <MapPin size={16} className="mt-1 text-[#6c70e5] animate-pulse-glow" />
+                <MapPin size={16} className="mt-1 text-[#0e28be] animate-pulse-glow" />
                 <span>Porto Alegre, RS</span>
               </div>
             </div>
@@ -132,7 +132,7 @@ const Footer = () => {
               © 2025 Lar Gustavo Nordlund. Todos os direitos reservados.
             </div>
             <div className="text-slate-300">
-              Feito com <Heart className="inline text-[#6c70e5] animate-pulse-glow" size={16} /> para cuidar de quem você ama
+              Feito com <Heart className="inline text-[#0e28be] animate-pulse-glow" size={16} /> para cuidar de quem você ama
             </div>
           </div>
         </div>

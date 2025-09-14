@@ -107,7 +107,7 @@ const Supporters = () => {
                     className="max-w-full max-h-full object-contain filter group-hover:brightness-110 transition-all"
                   />
                 </div>
-                <h3 className="font-bold text-white text-center mb-2 group-hover:text-[#6c70e5] transition-colors text-glow">
+                <h3 className="font-bold text-white text-center mb-2 group-hover:text-[#0e28be] transition-colors text-glow">
                   {supporter.name}
                 </h3>
                 <p className="text-slate-300 text-sm text-center">
@@ -121,7 +121,7 @@ const Supporters = () => {
         {/* Partnership Call to Action */}
         <div className="glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <div className="flex justify-center mb-6">
-            <div className="bg-gradient-to-r from-[#6c70e5] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
+            <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
               <Handshake className="text-white" size={36} />
             </div>
           </div>
@@ -136,17 +136,17 @@ const Supporters = () => {
           
           <div className="grid md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white/10 p-4 rounded-lg">
-              <Heart className="text-[#6c70e5] mx-auto mb-2 animate-pulse-glow" size={24} />
+              <Heart className="text-[#0e28be] mx-auto mb-2 animate-pulse-glow" size={24} />
               <div className="font-bold gradient-text mb-1">Responsabilidade Social</div>
               <div className="text-slate-300 text-sm">Demonstre o compromisso da sua empresa com causas sociais</div>
             </div>
             <div className="bg-white/10 p-4 rounded-lg">
-              <Heart className="text-[#6c70e5] mx-auto mb-2 animate-pulse-glow" size={24} />
+              <Heart className="text-[#0e28be] mx-auto mb-2 animate-pulse-glow" size={24} />
               <div className="font-bold gradient-text mb-1">Impacto Real</div>
               <div className="text-slate-300 text-sm">Sua parceria gera impacto direto na vida dos idosos</div>
             </div>
             <div className="bg-white/10 p-4 rounded-lg">
-              <Heart className="text-[#6c70e5] mx-auto mb-2 animate-pulse-glow" size={24} />
+              <Heart className="text-[#0e28be] mx-auto mb-2 animate-pulse-glow" size={24} />
               <div className="font-bold gradient-text mb-1">Reconhecimento</div>
               <div className="text-slate-300 text-sm">Sua marca associada a uma instituição respeitada</div>
             </div>
@@ -164,7 +164,7 @@ const Supporters = () => {
         <div className="mt-16 text-center">
           <div className="glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-fade-in-up">
             <div className="flex justify-center mb-4">
-              <Heart className="text-[#6c70e5] animate-pulse-glow" size={32} />
+              <Heart className="text-[#0e28be] animate-pulse-glow" size={32} />
             </div>
             <h4 className="text-2xl font-bold text-white mb-4 text-glow">
               Gratidão aos Nossos Apoiadores

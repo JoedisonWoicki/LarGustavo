@@ -104,47 +104,47 @@ O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos
               <div className="text-slate-300 text-center">
                 <div className="grid grid-cols-2 gap-2 text-sm">
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Integridade</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Ética</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Legalidade</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Transparência</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Comprometimento</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Amor</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Segurança</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Evolução</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Resiliência</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Economicidade</span>
                   </div>
                   <div className="flex items-center justify-center gap-1">
-                    <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span>Espiritualidade</span>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos
           </div>
           
           <div className="text-center glass-dark p-8 rounded-xl shadow-2xl hover-lift interactive-card animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            <div className="bg-gradient-to-r from-blue-500 to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+            <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
               <Users className="text-white" size={28} />
             </div>
             <h4 className="text-xl font-bold text-white mb-3 text-glow">Equipe Qualificada</h4>

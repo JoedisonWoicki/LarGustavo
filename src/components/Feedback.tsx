@@ -109,14 +109,14 @@ const Feedback = () => {
         {/* Feedback Type Cards */}
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {feedbackTypes.map((type, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-lg text-center">
+            <div key={index} className="glass-dark p-6 rounded-xl shadow-2xl text-center hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <div className={`${type.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4`}>
                 <type.icon className="text-white" size={28} />
               </div>
-              <h3 className="text-xl font-bold text-[#1f387f] mb-2">
+              <h3 className="text-xl font-bold text-white mb-2 text-glow">
                 {type.label}
               </h3>
-              <p className="text-gray-600 text-sm">
+              <p className="text-slate-300 text-sm">
                 {type.description}
               </p>
             </div>
@@ -124,12 +124,12 @@ const Feedback = () => {
         </div>
 
         {/* Feedback Form */}
-        <div className="bg-white rounded-2xl shadow-lg p-8">
+        <div className="glass-dark rounded-2xl shadow-2xl p-8 hover-lift animate-fade-in-up">
           <div className="flex items-center gap-3 mb-8">
-            <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center">
+            <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
               <MessageSquare className="text-white" size={24} />
             </div>
-            <h3 className="text-2xl font-bold text-[#1f387f]">
+            <h3 className="text-2xl font-bold text-white text-glow">
               Envie seu Feedback
             </h3>
           </div>
@@ -137,7 +137,7 @@ const Feedback = () => {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Feedback Type Selection */}
             <div>
-              <label htmlFor="type" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="type" className="block text-sm font-semibold text-white mb-2">
                 Tipo de Feedback *
               </label>
               <select
@@ -146,7 +146,7 @@ const Feedback = () => {
                 value={formData.type}
                 onChange={handleChange}
                 required
-                className="w-full btn-gradient text-white py-4 px-6 rounded-lg font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed hover-lift"
+                className="w-full glass text-white py-4 px-6 rounded-lg font-semibold focus:ring-2 focus:ring-[#0e28be] focus:border-transparent"
               >
                 <option value="">Selecione o tipo de feedback</option>
                 <option value="sugestao">Sugestão</option>
@@ -158,7 +158,7 @@ const Feedback = () => {
             {/* Rating (only for elogio) */}
             {formData.type === 'elogio' && (
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
+                <label className="block text-sm font-semibold text-white mb-2">
                   Avaliação
                 </label>
                 <div className="flex gap-2">
@@ -181,7 +181,7 @@ const Feedback = () => {
             {/* Personal Information */}
             <div className="grid md:grid-cols-2 gap-4">
               <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="name" className="block text-sm font-semibold text-white mb-2">
                   Nome Completo
                 </label>
                 <input
@@ -190,13 +190,13 @@ const Feedback = () => {
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                   placeholder="Seu nome (opcional)"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
+                <label htmlFor="email" className="block text-sm font-semibold text-white mb-2">
                   E-mail
                 </label>
                 <input
@@ -205,14 +205,14 @@ const Feedback = () => {
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                   placeholder="seu@email.com (opcional)"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="phone" className="block text-sm font-semibold text-white mb-2">
                 Telefone
               </label>
               <input
@@ -221,14 +221,14 @@ const Feedback = () => {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent"
+                className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white placeholder-slate-400"
                 placeholder="(51) 99999-9999 (opcional)"
               />
             </div>
 
             {/* Message */}
             <div>
-              <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-2">
+              <label htmlFor="message" className="block text-sm font-semibold text-white mb-2">
                 Mensagem *
               </label>
               <textarea
@@ -238,33 +238,32 @@ const Feedback = () => {
                 onChange={handleChange}
                 required
                 rows={6}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#1f387f] focus:border-transparent resize-vertical"
+                className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent resize-vertical text-white placeholder-slate-400"
                 placeholder="Por favor, descreva sua sugestão, reclamação ou elogio de forma clara..."
               ></textarea>
             </div>
 
             {/* Contact Preference */}
-            <div className="bg-blue-50 p-4 rounded-lg">
-              <p className="text-sm text-blue-800 mb-2">
+            <div className="glass p-4 rounded-lg shadow-2xl">
+              <p className="text-sm text-white mb-2">
                 <strong>Deseja receber uma resposta?</strong>
               </p>
-              <p className="text-xs text-blue-700">
+              <p className="text-xs text-slate-300">
                 Caso queira receber uma resposta, deixe sua informação de contato (e-mail ou telefone). 
                 Todas as mensagens são analisadas com atenção e ajudam no aprimoramento dos nossos processos e atendimento.
               </p>
             </div>
 
-                <Mail className="text-white" size={20} />
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full bg-[#d7241f] text-white py-4 px-6 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full btn-gradient text-white py-4 px-6 rounded-lg font-semibold flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed hover-lift"
             >
               <Send size={20} />
               {isSubmitting ? 'Enviando...' : 'Enviar Feedback'}
             </button>
 
-            <p className="text-xs text-gray-500 text-center">
+            <p className="text-xs text-slate-400 text-center">
               <strong>Importante:</strong> Ao enviar o formulário, seu cliente de email será aberto automaticamente 
               com a mensagem pré-formatada para envio ao administrador.
             </p>
@@ -272,55 +271,55 @@ const Feedback = () => {
         </div>
 
         {/* Thank You Message */}
-        <div className="mt-16 bg-[#1f387f] rounded-2xl p-8 text-center text-white">
+        <div className="mt-16 glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <div className="flex justify-center mb-4">
-            <div className="bg-[#d7241f] w-20 h-20 rounded-full flex items-center justify-center">
+            <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
               <MessageSquare className="text-white" size={36} />
             </div>
           </div>
           <h3 className="text-3xl font-bold mb-4">
             Agradecemos sua Colaboração
           </h3>
-          <p className="text-xl text-blue-100 max-w-2xl mx-auto">
+          <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             Agradecemos sua colaboração, confiança e reconhecimento. Seu feedback é fundamental 
             para continuarmos oferecendo o melhor cuidado e atendimento aos nossos residentes e famílias.
           </p>
         </div>
 
         {/* Contact Information */}
-        <div className="mt-12 bg-white p-8 rounded-xl shadow-lg">
+        <div className="mt-12 glass-dark p-8 rounded-xl shadow-2xl hover-lift animate-fade-in-up">
           <div className="text-center mb-6">
-            <h4 className="text-2xl font-bold text-[#1f387f] mb-2">
+            <h4 className="text-2xl font-bold text-white mb-2 text-glow">
               Informações de Contato
             </h4>
-            <p className="text-gray-600">
+            <p className="text-slate-300">
               Entre em contato conosco através dos canais abaixo para esclarecimentos sobre seu feedback.
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
                 <Mail className="text-white" size={20} />
               </div>
-              <h5 className="font-bold text-[#1f387f] mb-1">Email do Administrador</h5>
-              <p className="text-gray-600 text-sm">joedison398@gmail.com</p>
+              <h5 className="font-bold text-white mb-1 text-glow">Email do Administrador</h5>
+              <p className="text-slate-300 text-sm">joedison398@gmail.com</p>
             </div>
             
             <div>
-              <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
                 <Phone className="text-white" size={20} />
               </div>
-              <h5 className="font-bold text-[#1f387f] mb-1">Telefone</h5>
-              <p className="text-gray-600 text-sm">(51) 3386-1126</p>
+              <h5 className="font-bold text-white mb-1 text-glow">Telefone</h5>
+              <p className="text-slate-300 text-sm">(51) 3386-1126</p>
             </div>
             
             <div>
-              <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
                 <Clock className="text-white" size={20} />
               </div>
-              <h5 className="font-bold text-[#1f387f] mb-1">Horário de Atendimento</h5>
-              <p className="text-gray-600 text-sm">Segunda a Sexta: 8h às 17h</p>
+              <h5 className="font-bold text-white mb-1 text-glow">Horário de Atendimento</h5>
+              <p className="text-slate-300 text-sm">Segunda a Sexta: 8h às 17h</p>
             </div>
           </div>
         </div>

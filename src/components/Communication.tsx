@@ -165,11 +165,11 @@ const Communication = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className="bg-[#1f387f] rounded-xl p-8 text-white text-center">
+          <div className="glass-dark rounded-xl p-8 text-white text-center shadow-2xl hover-lift">
             <h4 className="text-2xl font-bold mb-4">
               Receba Nossas Atualizações
             </h4>
-            <p className="text-blue-100 mb-6 max-w-2xl mx-auto">
+            <p className="text-slate-300 mb-6 max-w-2xl mx-auto">
               Cadastre-se para receber notícias, eventos e informações importantes 
               sobre o Lar Gustavo Nordlund diretamente no seu e-mail.
             </p>
@@ -180,7 +180,7 @@ const Communication = () => {
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 required
-                className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#d7241f]"
+                className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0e28be]"
               />
               <button 
                 type="submit"
@@ -206,9 +206,9 @@ const Communication = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="bg-white p-8 rounded-xl shadow-lg relative">
+              <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl relative hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="absolute -top-4 left-8">
-                  <div className="bg-[#d7241f] w-12 h-12 rounded-full flex items-center justify-center">
+                  <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                     <Quote className="text-white" size={24} />
                   </div>
                 </div>
@@ -221,13 +221,13 @@ const Communication = () => {
                     ))}
                   </div>
                   
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="text-slate-300 mb-6 leading-relaxed">
                     "{testimonial.content}"
                   </p>
                   
-                  <div className="border-t pt-4">
-                    <div className="font-bold text-[#1f387f]">{testimonial.name}</div>
-                    <div className="text-gray-500 text-sm">{testimonial.relationship}</div>
+                  <div className="border-t border-white/20 pt-4">
+                    <div className="font-bold text-white text-glow">{testimonial.name}</div>
+                    <div className="text-slate-400 text-sm">{testimonial.relationship}</div>
                   </div>
                 </div>
               </div>
@@ -236,22 +236,22 @@ const Communication = () => {
         </div>
 
         {/* Communication CTA */}
-        <div className="bg-[#1f387f] rounded-2xl p-8 text-center text-white">
+        <div className="glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <div className="flex justify-center mb-6">
-            <div className="bg-[#d7241f] w-20 h-20 rounded-full flex items-center justify-center">
+            <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
               <Phone className="text-white" size={36} />
             </div>
           </div>
           <h3 className="text-3xl font-bold mb-4">
             Mantenha-se Sempre Informado
           </h3>
-          <p className="text-xl text-blue-100 mb-6">
+          <p className="text-xl text-slate-300 mb-6">
             Nossa equipe está sempre disponível para conversar com você sobre o bem-estar 
             do seu familiar. Agende uma conversa ou visita quando desejar.
           </p>
           <a 
             href="#contato" 
-            className="inline-block bg-[#d7241f] text-white px-8 py-4 rounded-lg hover:bg-[#b81e1b] transition-colors font-semibold"
+            className="btn-gradient text-white px-8 py-4 rounded-lg font-semibold hover-lift"
           >
             Entre em Contato
           </a>

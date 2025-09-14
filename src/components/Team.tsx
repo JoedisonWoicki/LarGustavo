@@ -53,7 +53,7 @@ const Team = () => {
           {teamAreas.map((area, index) => (
             <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-r from-[#6c70e5] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
                   <area.icon className="text-white" size={28} />
                 </div>
                 <div>
@@ -70,7 +70,7 @@ const Team = () => {
               <div className="grid grid-cols-2 gap-2">
                 {area.professionals.map((prof, profIndex) => (
                   <div key={profIndex} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-gradient-to-r from-[#6c70e5] to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span className="text-sm text-slate-400">{prof}</span>
                   </div>
                 ))}
@@ -105,7 +105,7 @@ const Team = () => {
         <div className="mt-16 text-center">
           <div className="glass-dark p-12 rounded-2xl shadow-2xl hover-lift animate-fade-in-up">
             <div className="flex justify-center mb-6">
-              <div className="bg-gradient-to-r from-[#6c70e5] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
                 <Heart className="text-white" size={36} />
               </div>
             </div>
