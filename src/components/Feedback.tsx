@@ -175,7 +175,7 @@ const Feedback = () => {
                       type="button"
                       onClick={() => handleRatingClick(star)}
                       className={`p-1 rounded transition-colors ${
-                        star <= formData.rating ? 'text-yellow-400' : 'text-gray-300'
+                        star <= formData.rating ? 'text-black-400' : 'text-gray-300'
                       }`}
                     >
                       <Star size={32} fill={star <= formData.rating ? 'currentColor' : 'none'} />
