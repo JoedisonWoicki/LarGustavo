@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
-import { Quote, Star, Phone, Calendar, Users, ArrowRight } from 'lucide-react';
+import { Quote, Star, Phone, Calendar, Users, ArrowRight, X } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 const Communication = () => {
   const [newsletterEmail, setNewsletterEmail] = useState('');
   const [isSubmittingNewsletter, setIsSubmittingNewsletter] = useState(false);
+  const [selectedArticle, setSelectedArticle] = useState<number | null>(null);
 
   const handleNewsletterSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -71,28 +72,153 @@ const Communication = () => {
       date: '15 de Janeiro, 2025',
       category: 'Infraestrutura',
       excerpt: 'Inauguramos uma nova sala de fisioterapia com equipamentos modernos para melhor atender nossos residentes.',
-      image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/4386467/pexels-photo-4386467.jpeg?auto=compress&cs=tinysrgb&w=800',
+      fullContent: `
+        <p>Estamos muito felizes em anunciar a inauguração da nossa nova sala de fisioterapia, um espaço moderno e totalmente equipado para proporcionar ainda mais qualidade de vida aos nossos residentes.</p>
+
+        <h3>Investimento em Infraestrutura</h3>
+        <p>O novo espaço conta com mais de 80m² dedicados exclusivamente à reabilitação e manutenção da saúde física dos nossos residentes. Investimos em equipamentos de última geração, incluindo:</p>
+        <ul>
+          <li>Esteiras ergométricas com sistema de segurança</li>
+          <li>Aparelhos de fortalecimento muscular adaptados</li>
+          <li>Mesa de fisioterapia elétrica</li>
+          <li>Equipamentos para terapia ocupacional</li>
+          <li>Barras paralelas para treino de marcha</li>
+        </ul>
+
+        <h3>Benefícios para os Residentes</h3>
+        <p>Com este novo espaço, poderemos oferecer sessões de fisioterapia mais frequentes e personalizadas, contribuindo para:</p>
+        <ul>
+          <li>Melhoria da mobilidade e equilíbrio</li>
+          <li>Prevenção de quedas</li>
+          <li>Fortalecimento muscular</li>
+          <li>Manutenção da autonomia</li>
+          <li>Recuperação pós-cirúrgica mais eficiente</li>
+        </ul>
+
+        <p>A inauguração contou com a presença de toda a equipe, residentes e seus familiares, em um momento de celebração e gratidão por mais esta conquista.</p>
+      `
     },
     {
       title: 'Festa de Ano Novo com as Famílias',
       date: '31 de Dezembro, 2024',
       category: 'Eventos',
       excerpt: 'Celebramos a chegada de 2025 com uma festa especial reunindo residentes, famílias e equipe.',
-      image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800',
+      fullContent: `
+        <p>A virada do ano de 2024 para 2025 foi celebrada com muito amor, alegria e união no Lar Gustavo Nordlund. Nossa tradicional festa de Réveillon reuniu residentes, familiares e toda a equipe em uma noite inesquecível.</p>
+
+        <h3>Uma Celebração Especial</h3>
+        <p>O evento começou às 20h com um jantar especial preparado pela nossa equipe de nutrição e cozinha. O cardápio incluiu pratos tradicionais da data, todos adaptados para as necessidades dietéticas de nossos residentes:</p>
+        <ul>
+          <li>Peru assado com molho de frutas</li>
+          <li>Arroz à grega</li>
+          <li>Farofa especial</li>
+          <li>Saladas variadas</li>
+          <li>Sobremesas: rabanada, salada de frutas e sorvete</li>
+        </ul>
+
+        <h3>Atividades e Diversão</h3>
+        <p>Durante a noite, promovemos diversas atividades que encantaram a todos:</p>
+        <ul>
+          <li>Música ao vivo com repertório de clássicos brasileiros</li>
+          <li>Karaokê com os residentes</li>
+          <li>Dança e confraternização</li>
+          <li>Contagem regressiva especial para a meia-noite</li>
+          <li>Brinde com espumante (sem álcool) e uvas</li>
+        </ul>
+
+        <h3>Momentos de Emoção</h3>
+        <p>A meia-noite foi marcada por abraços, lágrimas de alegria e muitas mensagens de esperança para o novo ano. Familiares puderam compartilhar este momento especial com seus entes queridos, renovando votos de amor e cuidado.</p>
+
+        <p>Agradecemos a todos que participaram e tornaram esta celebração tão especial. Que 2025 seja um ano repleto de saúde, amor e realizações para todos!</p>
+      `
     },
     {
       title: 'Campanha de Natal Arrecada Mais de R$ 50 mil',
       date: '20 de Dezembro, 2024',
       category: 'Doações',
       excerpt: 'Nossa campanha natalina foi um sucesso, permitindo melhorias nas instalações e atividades.',
-      image: 'https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/1303081/pexels-photo-1303081.jpeg?auto=compress&cs=tinysrgb&w=800',
+      fullContent: `
+        <p>A Campanha de Natal 2024 do Lar Gustavo Nordlund superou todas as expectativas, arrecadando mais de R$ 50 mil em doações financeiras, além de inúmeros itens materiais. Este resultado extraordinário demonstra a generosidade e o compromisso da nossa comunidade com o bem-estar dos idosos.</p>
+
+        <h3>Resultados da Campanha</h3>
+        <p>Durante os meses de novembro e dezembro, realizamos uma campanha intensa de arrecadação com os seguintes resultados:</p>
+        <ul>
+          <li><strong>R$ 52.350,00</strong> em doações financeiras</li>
+          <li><strong>850 kg</strong> de alimentos não perecíveis</li>
+          <li><strong>450 unidades</strong> de produtos de higiene pessoal</li>
+          <li><strong>320 peças</strong> de roupas de cama e banho</li>
+          <li><strong>150 presentes</strong> individualizados para os residentes</li>
+        </ul>
+
+        <h3>Aplicação dos Recursos</h3>
+        <p>Os recursos arrecadados serão aplicados em melhorias prioritárias:</p>
+        <ul>
+          <li>Reforma e climatização de quartos (R$ 25.000)</li>
+          <li>Aquisição de equipamentos médicos (R$ 15.000)</li>
+          <li>Melhorias nas áreas de convivência (R$ 8.000)</li>
+          <li>Programação de atividades para 2025 (R$ 4.350)</li>
+        </ul>
+
+        <h3>Agradecimentos</h3>
+        <p>Expressamos nossa profunda gratidão a todos que contribuíram:</p>
+        <ul>
+          <li>Empresas parceiras e patrocinadores</li>
+          <li>Voluntários que dedicaram seu tempo</li>
+          <li>Doadores individuais</li>
+          <li>Comunidade local</li>
+        </ul>
+
+        <p>Cada doação, independente do valor, fez a diferença e trouxe mais alegria e conforto para nossos residentes neste Natal. Muito obrigado a todos!</p>
+      `
     },
     {
       title: 'Nova Parceria com Universidade Local',
       date: '10 de Dezembro, 2024',
       category: 'Parcerias',
       excerpt: 'Firmamos parceria para estágios supervisionados em geriatria e gerontologia.',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800'
+      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
+      fullContent: `
+        <p>Temos o orgulho de anunciar uma parceria estratégica com a Universidade Federal do Rio Grande do Sul (UFRGS), que trará benefícios significativos tanto para o Lar Gustavo Nordlund quanto para a formação de novos profissionais especializados em cuidado geriátrico.</p>
+
+        <h3>Sobre a Parceria</h3>
+        <p>O convênio estabelecido prevê o recebimento de estudantes dos cursos de:</p>
+        <ul>
+          <li>Enfermagem</li>
+          <li>Fisioterapia</li>
+          <li>Nutrição</li>
+          <li>Psicologia</li>
+          <li>Serviço Social</li>
+          <li>Medicina (com foco em Geriatria)</li>
+        </ul>
+
+        <h3>Benefícios para os Residentes</h3>
+        <p>Esta parceria trará diversos benefícios diretos para nossos residentes:</p>
+        <ul>
+          <li>Ampliação do atendimento profissional</li>
+          <li>Acesso a novas técnicas e conhecimentos</li>
+          <li>Maior atenção individualizada</li>
+          <li>Projetos de pesquisa focados em melhoria da qualidade de vida</li>
+          <li>Atividades educativas e culturais</li>
+        </ul>
+
+        <h3>Formação de Qualidade</h3>
+        <p>Os estagiários terão oportunidade de:</p>
+        <ul>
+          <li>Praticar conhecimentos teóricos em ambiente real</li>
+          <li>Desenvolver competências específicas em gerontologia</li>
+          <li>Trabalhar em equipe multidisciplinar</li>
+          <li>Aprender com profissionais experientes</li>
+          <li>Contribuir com projetos de melhoria contínua</li>
+        </ul>
+
+        <h3>Compromisso com a Excelência</h3>
+        <p>Esta parceria reforça nosso compromisso com a excelência no cuidado e com a formação de profissionais qualificados para atuar na área geriátrica. Os estágios começam em março de 2025 e terão supervisão rigorosa de nossa equipe e dos professores da universidade.</p>
+
+        <p>Acreditamos que esta integração entre academia e prática fortalecerá ainda mais a qualidade dos serviços prestados aos nossos residentes.</p>
+      `
     }
   ];
 
@@ -164,7 +290,10 @@ const Communication = () => {
                     {article.excerpt}
                   </p>
                   
-                  <button className="flex items-center gap-2 text-[#0e28be] font-semibold hover:gap-3 transition-all hover-glow">
+                  <button
+                    onClick={() => setSelectedArticle(index)}
+                    className="flex items-center gap-2 text-[#0e28be] font-semibold hover:gap-3 transition-all hover-glow"
+                  >
                     <span>Leia mais</span>
                     <ArrowRight size={16} />
                   </button>
@@ -266,6 +395,75 @@ const Communication = () => {
           </a>
         </div>
       </div>
+
+      {/* Modal for Full Article */}
+      {selectedArticle !== null && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-80"
+          onClick={() => setSelectedArticle(null)}
+        >
+          <div
+            className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedArticle(null)}
+              className="absolute top-4 right-4 bg-red-500 hover:bg-red-600 text-white p-2 rounded-full transition-colors z-10"
+            >
+              <X size={24} />
+            </button>
+
+            {/* Article Header */}
+            <div className="relative">
+              <img
+                src={news[selectedArticle].image}
+                alt={news[selectedArticle].title}
+                className="w-full h-64 object-cover rounded-t-2xl"
+              />
+              <div className="absolute top-4 left-4">
+                <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                  news[selectedArticle].category === 'Infraestrutura' ? 'bg-blue-100 text-blue-800' :
+                  news[selectedArticle].category === 'Eventos' ? 'bg-green-100 text-green-800' :
+                  news[selectedArticle].category === 'Doações' ? 'bg-red-100 text-red-800' :
+                  'bg-purple-100 text-purple-800'
+                }`}>
+                  {news[selectedArticle].category}
+                </span>
+              </div>
+            </div>
+
+            {/* Article Content */}
+            <div className="p-8">
+              <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">
+                <Calendar size={16} className="text-[#0e28be]" />
+                <span>{news[selectedArticle].date}</span>
+              </div>
+
+              <h2 className="text-4xl font-black text-white mb-6 gradient-text">
+                {news[selectedArticle].title}
+              </h2>
+
+              <div
+                className="prose prose-invert prose-lg max-w-none"
+                dangerouslySetInnerHTML={{ __html: news[selectedArticle].fullContent }}
+                style={{
+                  color: '#cbd5e1',
+                }}
+              />
+
+              <div className="mt-8 pt-8 border-t border-white/20">
+                <button
+                  onClick={() => setSelectedArticle(null)}
+                  className="btn-gradient text-white px-8 py-3 rounded-lg font-semibold hover-lift"
+                >
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
