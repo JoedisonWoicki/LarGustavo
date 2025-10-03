@@ -301,8 +301,11 @@ const Feedback = () => {
             </h4>
             <p className="text-slate-300">
               Entre em contato conosco através dos canais abaixo para esclarecimentos sobre seu feedback.
-            </div>
-          </section>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
