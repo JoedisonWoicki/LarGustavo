@@ -119,8 +119,8 @@ const Footer = () => {
               </div>
               <div className="flex items-start gap-2 text-slate-300 hover-glow">
                 <MapPin size={16} className="mt-1 text-[#0e28be] animate-pulse-glow" />
-                <span>R. Dezenove de Fevereiro, 426 - Rubem Berta
-Porto Alegre, RS - CEP 91270-450</span>
+                <span>R. Dezenove de Fevereiro, 426  Rubem Berta
+Porto Alegre, RS  CEP 91270-450</span>
               </div>
             </div>
           </div>
