@@ -304,34 +304,6 @@ const Feedback = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 text-center">
-            <div>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
-                <Mail className="text-white" size={20} />
-              </div>
-              <h5 className="font-bold text-white mb-1 text-glow">Email do Administrador</h5>
-              <p className="text-slate-300 text-sm">joedison398@gmail.com</p>
-            </div>
-            
-            <div>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
-                <Phone className="text-white" size={20} />
-              </div>
-              <h5 className="font-bold text-white mb-1 text-glow">Telefone</h5>
-              <p className="text-slate-300 text-sm">(51) 3386-1126</p>
-            </div>
-            
-            <div>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
-                <Clock className="text-white" size={20} />
-              </div>
-              <h5 className="font-bold text-white mb-1 text-glow">Horário de Atendimento</h5>
-              <p className="text-slate-300 text-sm">Segunda a Sexta: 8h às 17h</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 };
 
