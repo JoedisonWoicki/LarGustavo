@@ -187,7 +187,7 @@ const Donations = () => {
                 foi criado para incentivar esse gesto simples, que faz toda a diferença.
               </p>
 
-              <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
+              <div className="bg-black-50 border-l-4 border-yellow-400 p-4 mb-4">
                 <div className="flex items-start gap-2">
                   <span className="text-black-600 font-bold">⚠️</span>
                   <div>
