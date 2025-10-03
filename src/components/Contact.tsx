@@ -65,8 +65,10 @@ const Contact = () => {
             Entre em Contato
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Estamos aqui para esclarecer suas dúvidas e ajudá-lo a conhecer 
-            melhor nossos serviços. Entre em contato conosco.
+            Estamos à disposição para conversar, esclarecer dúvidas e apresentar nossos serviços e instalações.
+            Nossa equipe está pronta para recebê-lo e sua família com todo carinho e atenção. Agende uma visita
+            para conhecer pessoalmente o Lar Gustavo Nordlund e sentir o ambiente acolhedor que oferecemos.
+            Você e sua família são sempre bem-vindos!
           </p>
         </div>
 

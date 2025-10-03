@@ -44,8 +44,10 @@ const Donations = () => {
             Como Doar
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Sua generosidade faz a diferença na vida dos nossos residentes. 
-            Conheça as diferentes formas de contribuir com o Lar Gustavo Nordlund.
+            Sua generosidade transforma vidas e faz a diferença real no dia a dia dos nossos residentes.
+            Cada doação, independente do valor ou forma, ajuda a manter nossos serviços de excelência,
+            melhorar nossa infraestrutura e proporcionar mais conforto, dignidade e felicidade para
+            idosos que dedicaram suas vidas à construção de nossa sociedade.
           </p>
         </div>
 

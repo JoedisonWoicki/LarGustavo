@@ -111,8 +111,10 @@ const Communication = () => {
             Comunicação
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Mantemos uma comunicação transparente e constante com as famílias, 
-            garantindo que todos estejam sempre informados sobre o bem-estar dos residentes.
+            Mantemos uma comunicação transparente, constante e acolhedora com as famílias e a comunidade.
+            Compartilhamos novidades, eventos, conquistas e histórias que demonstram nosso compromisso diário
+            com o bem-estar de cada residente. Acreditamos que famílias bem informadas são parceiras essenciais
+            no cuidado de qualidade.
           </p>
         </div>
 

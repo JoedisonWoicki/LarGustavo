@@ -67,9 +67,11 @@ const Transparency = () => {
             Transparência
           </h2>
           <p className="text-xl text-slate-300 max-w-4xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            No Lar Gustavo Nordlund, acreditamos que a confiança da comunidade é construída com transparência, 
-            responsabilidade e respeito. Por isso, colocamos à disposição de todos informações claras sobre 
-            nossas receitas, despesas, fontes de recursos e convênios.
+            A confiança é a base de nossa relação com a comunidade, famílias e parceiros. Por isso,
+            praticamos a transparência total em todas as nossas ações. Disponibilizamos publicamente
+            informações detalhadas sobre receitas, despesas, aplicação de recursos, convênios e relatórios
+            de atividades. Acreditamos que prestação de contas clara e acessível fortalece nossa missão
+            e demonstra nosso compromisso com a responsabilidade social e ética.
           </p>
         </div>
 

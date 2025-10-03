@@ -124,8 +124,10 @@ const Careers = () => {
             Trabalhe Conosco
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Junte-se à nossa equipe e faça parte de uma tradição de mais de 70 anos 
-            cuidando com amor e dedicação. Buscamos profissionais comprometidos com o bem-estar dos idosos.
+            Venha fazer parte de uma equipe que faz a diferença todos os dias. Com mais de 70 anos de
+            tradição em cuidado geriátrico, oferecemos um ambiente de trabalho acolhedor, oportunidades
+            de crescimento profissional e a satisfação de trabalhar com propósito. Buscamos profissionais
+            qualificados, empáticos e comprometidos com o bem-estar dos idosos.
           </p>
         </div>
 

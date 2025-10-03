@@ -107,9 +107,11 @@ const Feedback = () => {
             Sugestões, Reclamações e Elogios
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Sua opinião é muito importante para nós! Utilize o formulário abaixo para enviar suas 
-            sugestões de melhoria, relatar qualquer problema ou insatisfação, ou registrar um elogio 
-            sobre nossos produtos e serviços.
+            Sua opinião é fundamental para nossa melhoria contínua. Queremos ouvir você! Use este espaço
+            para compartilhar sugestões que ajudem a aprimorar nossos serviços, relatar qualquer situação
+            que necessite atenção, ou registrar elogios que motivam nossa equipe. Cada feedback é analisado
+            com cuidado e seriedade, pois acreditamos que a participação ativa da comunidade e das famílias
+            nos torna uma instituição cada vez melhor.
           </p>
         </div>
 

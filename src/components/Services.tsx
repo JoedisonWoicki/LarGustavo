@@ -6,38 +6,38 @@ const Services = () => {
     {
       icon: Heart,
       title: 'Cuidados Médicos',
-      description: 'Acompanhamento médico regular, administração de medicamentos e cuidados de enfermagem 24 horas.',
-      features: ['Consultas regulares', 'Enfermagem 24h', 'Medicação controlada', 'Emergências']
+      description: 'Acompanhamento médico geriátrico especializado, administração segura de medicamentos e assistência de enfermagem 24 horas por dia, 7 dias por semana. Nossa equipe garante cuidado clínico de excelência para todas as necessidades de saúde.',
+      features: ['Médico geriatra', 'Enfermagem 24h', 'Gestão de medicamentos', 'Pronto atendimento']
     },
     {
       icon: Utensils,
       title: 'Nutrição Especializada',
-      description: 'Cardápio balanceado e personalizado, elaborado por nutricionistas para cada necessidade.',
-      features: ['Cardápio personalizado', 'Dietas especiais', 'Acompanhamento nutricional', 'Refeições regulares']
+      description: 'Nutrição geriátrica especializada com cardápios elaborados por nutricionistas, adaptados às necessidades individuais de cada residente. Oferecemos refeições balanceadas, saborosas e adequadas para condições específicas de saúde.',
+      features: ['Avaliação nutricional', 'Dietas terapêuticas', 'Consistência adaptada', '5 refeições diárias']
     },
     {
       icon: Brain,
       title: 'Suporte Psicológico',
-      description: 'Acompanhamento psicológico individual e em grupo para bem-estar emocional.',
-      features: ['Terapia individual', 'Atividades em grupo', 'Apoio familiar', 'Estimulação cognitiva']
+      description: 'Cuidado emocional e mental com psicólogos especializados em gerontologia. Oferecemos terapia individual, suporte para adaptação, gestão de emoções e estimulação cognitiva para preservar memória e capacidades mentais.',
+      features: ['Avaliação psicológica', 'Terapia individual', 'Grupos terapêuticos', 'Estimulação cognitiva']
     },
     {
       icon: Activity,
       title: 'Atividades Sociais',
-      description: 'Programação diversificada de atividades recreativas, sociais e terapêuticas.',
-      features: ['Atividades recreativas', 'Fisioterapia', 'Eventos sociais', 'Integração familiar']
+      description: 'Programação rica e diversificada que promove socialização, estimulação física e mental. Incluindo fisioterapia, terapia ocupacional, música, arte, jogos e celebrações especiais que mantivem os residentes ativos e engajados.',
+      features: ['Fisioterapia', 'Terapia ocupacional', 'Atividades recreativas', 'Eventos festivos']
     },
     {
       icon: Clock,
       title: 'Cuidado Integral 24h',
-      description: 'Assistência completa em período integral com profissionais especializados.',
-      features: ['Supervisão 24h', 'Cuidados pessoais', 'Segurança total', 'Monitoramento contínuo']
+      description: 'Cuidado integral ininterrupto com equipe multidisciplinar presente 24 horas. Assistência em todas as atividades da vida diária, higiene, mobilidade, alimentação e conforto, garantindo segurança e bem-estar constante.',
+      features: ['Cuidadores 24h', 'Higiene e conforto', 'Mobilidade assistida', 'Suporte noturno']
     },
     {
       icon: Shield,
       title: 'Ambiente Seguro',
-      description: 'Instalações adaptadas e seguras, com equipamentos modernos e acessibilidade total.',
-      features: ['Instalações adaptadas', 'Equipamentos modernos', 'Acessibilidade', 'Segurança total']
+      description: 'Infraestrutura completamente adaptada para idosos com acessibilidade universal, equipamentos modernos, sistemas de segurança e ambientes confortáveis. Quartos privativos ou compartilhados, áreas de convivência e jardins.',
+      features: ['Acessibilidade total', 'Sistema de emergência', 'Quartos adaptados', 'Áreas de lazer']
     }
   ];
 
@@ -56,8 +56,9 @@ const Services = () => {
             Nossos Serviços
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Oferecemos assistência integral com uma abordagem multidisciplinar, 
-            garantindo o melhor cuidado em todas as áreas da vida dos nossos residentes.
+            Oferecemos assistência integral com abordagem multidisciplinar que engloba saúde física,
+            mental, emocional e social. Cada residente recebe cuidado personalizado desenvolvido
+            por nossa equipe especializada, garantindo qualidade de vida, dignidade e bem-estar.
           </p>
         </div>
 
@@ -93,8 +94,10 @@ const Services = () => {
             Assistência Integral Personalizada
           </h3>
           <p className="text-xl text-slate-300 mb-6">
-            Cada residente recebe um plano de cuidados personalizado, desenvolvido 
-            pela nossa equipe multidisciplinar para atender suas necessidades específicas.
+            Cada residente passa por uma avaliação completa ao chegar, e nossa equipe
+            multidisciplinar desenvolve um Plano de Cuidado Individual (PCI) personalizado.
+            Este plano é revisado regularmente e ajustado conforme as necessidades evoluem,
+            garantindo atenção especializada e humanizada em todas as etapas.
           </p>
           <a 
             href="#contato" 

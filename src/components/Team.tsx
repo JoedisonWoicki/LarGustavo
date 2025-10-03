@@ -44,8 +44,10 @@ const Team = () => {
             Nossa Equipe Multidisciplinar
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Contamos com profissionais altamente qualificados e dedicados, 
-            trabalhando em conjunto para proporcionar o melhor cuidado aos nossos residentes.
+            Nossa equipe é composta por mais de 60 profissionais altamente qualificados e apaixonados
+            pelo cuidado geriátrico. Trabalhamos de forma integrada e colaborativa, unindo diferentes
+            especialidades para proporcionar assistência completa, humanizada e de excelência aos
+            nossos residentes.
           </p>
         </div>
 
@@ -113,9 +115,11 @@ const Team = () => {
               Compromisso com a Excelência
             </h3>
             <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
-              Nossa equipe passa por treinamentos constantes e está sempre atualizada 
-              com as melhores práticas em geriatria e gerontologia. O bem-estar dos 
-              nossos residentes é nossa maior prioridade.
+              Investimos continuamente no desenvolvimento de nossa equipe através de treinamentos,
+              capacitações e atualizações nas melhores práticas em geriatria e gerontologia.
+              Cada profissional é criteriosamente selecionado não apenas por sua excelência técnica,
+              mas também por sua empatia, dedicação e compromisso com o cuidado humanizado. O bem-estar
+              e a felicidade dos nossos residentes são nossa missão e inspiração diária.
             </p>
           </div>
         </div>

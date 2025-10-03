@@ -17,11 +17,10 @@ const About = () => {
             Nossa História
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-           Lar Gustavo Nordlund
-
-Fundado em 1949 pelo missionário sueco Gustavo Nordlund (in memoriam). 
-
-O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos) em 27 de setembro de 1976. 
+            Fundado em 1949 pelo missionário sueco Gustavo Nordlund, o Lar nasceu do sonho de
+            criar um refúgio acolhedor para idosos que necessitam de cuidados especializados.
+            Reconhecido oficialmente como ILPI (Instituição de Longa Permanência para Idosos)
+            em 27 de setembro de 1976, continuamos honrando o legado de nosso fundador.
           </p>
         </div>
 
@@ -40,15 +39,17 @@ O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos
               Tradição em Cuidado
             </h3>
             <p className="text-slate-300 mb-6 leading-relaxed">
-              Fundado há mais de 70 anos, o Lar Gustavo Nordlund nasceu do desejo 
-              de oferecer um ambiente verdadeiramente familiar para idosos que necessitam 
-              de cuidados especializados. Ao longo das décadas, nos tornamos referência 
-              em assistência integral.
+              Nossa história começa em 1949, quando o missionário sueco Gustavo Nordlund
+              fundou o Lar com uma visão clara: criar um espaço onde idosos pudessem viver
+              com dignidade, respeito e cuidado familiar. Ao longo de mais de 70 anos,
+              essa visão se transformou em uma tradição sólida de excelência no cuidado geriátrico.
             </p>
             <p className="text-slate-300 mb-6 leading-relaxed">
-              Nossa missão é proporcionar qualidade de vida, dignidade e carinho a 
-              cada residente, mantendo sempre o compromisso com a excelência no atendimento 
-              e o respeito pela individualidade de cada pessoa.
+              Oficialmente reconhecidos como ILPI em 1976, evoluímos constantemente para
+              atender as necessidades de nossos residentes com tecnologia moderna, profissionais
+              altamente qualificados e, acima de tudo, o calor humano que nos define. Hoje,
+              somos referência em Porto Alegre por nosso compromisso inabalável com o bem-estar
+              físico, emocional e espiritual de cada pessoa que acolhemos.
             </p>
             <div className="flex flex-wrap gap-4">
               <div className="flex items-center gap-2 glass px-4 py-2 rounded-lg shadow-lg hover-lift">
@@ -77,9 +78,11 @@ O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos
               </div>
               <h4 className="text-2xl font-bold text-white mb-4 text-center text-glow">Missão</h4>
               <p className="text-slate-300 leading-relaxed text-center">
-                Acolher e manter idosos, com base nos valores cristãos, sem distinção à raça, cor ou credo, 
-                através de serviços, programas, projetos e benefícios sociais, de caráter continuado, 
-                permanente e planejado, de forma sustentável e com a garantia dos direitos conquistados por lei.
+                Acolher e cuidar de idosos com base nos valores cristãos, sem distinção de raça,
+                cor ou credo, oferecendo serviços, programas e benefícios sociais de forma continuada,
+                permanente e planejada. Buscamos garantir dignidade, qualidade de vida e todos os
+                direitos conquistados por lei, promovendo o bem-estar integral de cada residente
+                de maneira sustentável e responsável.
               </p>
             </div>
 
@@ -90,8 +93,10 @@ O Lar foi reconhecido como ILPI (Instituição de Longa Permanência para Idosos
               </div>
               <h4 className="text-2xl font-bold text-white mb-4 text-center text-glow">Visão</h4>
               <p className="text-slate-300 leading-relaxed text-center">
-                Ser reconhecido na prestação de serviços assistenciais e referência em acolhimento 
-                à pessoa idosa, promovendo o bem-estar físico, emocional, material e espiritual.
+                Ser reconhecidos como referência nacional em acolhimento e cuidado à pessoa idosa,
+                destacando-nos pela excelência na prestação de serviços assistenciais que promovem
+                o bem-estar físico, emocional, social e espiritual. Queremos ser sinônimo de
+                confiança, carinho e qualidade de vida para idosos e suas famílias.
               </p>
             </div>
 

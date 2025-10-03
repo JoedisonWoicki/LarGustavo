@@ -16,21 +16,22 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center relative z-10">
           <div className="animate-slide-in-left">
             <h1 className="text-5xl lg:text-7xl font-black mb-6 leading-tight tracking-tight text-white">
-              Mais de 70 Anos de 
+              Um Lugar para Chamar de Lar, com o
               <span className="gradient-text font-black animate-pulse-glow"> Cuidado </span>
-              e Carinho
+              que Sua Família Merece
             </h1>
             <p className="text-xl mb-8 text-slate-300 leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-              O Lar Gustavo Nordlund oferece um ambiente familiar e assistência integral 
-              para mais de 70 residentes, com uma equipe multidisciplinar qualificada 
-              em Porto Alegre/RS.
+              Há mais de 70 anos, o Lar Gustavo Nordlund oferece um ambiente verdadeiramente
+              familiar onde cada residente recebe cuidado integral, atenção personalizada e
+              muito carinho. Nossa equipe multidisciplinar qualificada está dedicada a proporcionar
+              qualidade de vida, dignidade e bem-estar para mais de 70 residentes em Porto Alegre/RS.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               <a 
                 href="#contato" 
                 className="btn-gradient text-white px-8 py-4 rounded-xl font-semibold text-center shadow-2xl hover-lift"
               >
-                Entre em Contato
+                Agende uma Visita
               </a>
               <a 
                 href="#sobre" 

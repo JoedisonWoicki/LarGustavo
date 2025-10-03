@@ -84,8 +84,10 @@ const Supporters = () => {
             Nossos Apoiadores
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto animate-fade-in-up" style={{animationDelay: '0.2s'}}>
-            Agradecemos a todos os parceiros e apoiadores que tornam possível 
-            nossa missão de cuidar com amor e dedicação há mais de 70 anos.
+            Nossa gratidão a todos os parceiros, apoiadores e amigos que acreditam em nossa missão
+            e tornam possível continuar cuidando com amor, dedicação e excelência há mais de 70 anos.
+            Cada parceria representa um compromisso compartilhado com a dignidade e qualidade de vida
+            dos idosos. Juntos, construímos um futuro melhor para quem construiu a nossa sociedade.
           </p>
         </div>
 
