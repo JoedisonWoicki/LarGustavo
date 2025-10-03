@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Gift, CreditCard, Receipt, Users, CheckCircle } from 'lucide-react';
+import { IMAGES } from '../config/images';
 
 const Donations = () => {
   const donationMethods = [
@@ -103,7 +104,7 @@ const Donations = () => {
               {/* QR Code PIX */}
               <div className="bg-white p-4 rounded-lg mb-4 text-center">
                 <img
-                  src="/pix_lar.png"
+                  src={IMAGES.pixQr}
                   alt="QR Code PIX para doação"
                   className="w-32 h-32 mx-auto mb-2"
                 />

@@ -1,73 +1,54 @@
 import React from 'react';
 import { Heart, Handshake } from 'lucide-react';
+import { IMAGES } from '../config/images';
 
 const Supporters = () => {
   const supporters = [
     {
-    
-      logo: '/public/01J2BW8W8WWSPYQPVF9YGZ6B8Z.jpg',
+      logo: IMAGES.supporters.apoiador1,
       website: 'https://www.banrisul.com.br',
- 
-     },
-     {
-      
-      logo: '/public/ael_sistemas_logo.jpeg',
+    },
+    {
+      logo: IMAGES.supporters.aelSistemas,
       website: 'https://www.aelsistemas.com.br',
-    
     },
     {
-      
-      logo: 'public/whatsapp_2025-06-18_11-04-22.jpg',
+      logo: IMAGES.supporters.apoiador2,
       website: 'https://institutojardimeuropa.com.br/?fbclid=PAZXh0bgNhZW0CMTEAAacwl6Lm7VYRuN-XJGmYY_uTjQyXYYbHT1s5DLYlEJfzxr5_cLD4k29Rj7rqwg_aem_xjHS5384NYHQtMu_2ypBuw',
-    
-     },    
-     {
-      
-      logo: 'public/whatsapp_2025-06-18_10-42-15.jpg',
+    },
+    {
+      logo: IMAGES.supporters.apoiador3,
       website: 'https://www.marquespan.com.br/',
-    
     },
     {
-      
-      logo: 'public/mada_doces.jpg',
+      logo: IMAGES.supporters.madaDoces,
       website: 'https://www.instagram.com/madadocesartesanais/',
-    
     },
     {
-      
-      logo: 'public/whatsapp_2025-06-18_11-04-40.jpg',
+      logo: IMAGES.supporters.apoiador4,
       website: 'https://www.instagram.com/petacolhe/',
-    
     },
     {
-      
-      logo: '/public/image.jpg',
+      logo: IMAGES.supporters.apoiador5,
       website: 'https://doacoes.prefeitura.poa.br/fundoidoso/projetos',
-      
     },
     {
-     
-      logo: '/public/whatsapp_2025-06-18_10-01-57.jpg',
+      logo: IMAGES.supporters.apoiador6,
       website: 'https://www.atitus.edu.br',
-     },
-     {
-     
-      logo: 'public/logo_frigelar_QERmNQ.png',
-      website: 'https://www.frigelar.com.br/?srsltid=AfmBOorFsi5oj9SF_-S3gZg1H2i6z5j3pKKZjvBmoNFhgRpSIYH70auo',
-     },
-     {
-   
-      logo: 'public/pestana_leiloes_logo.jpeg',
-      website: 'https://www.pestanaleiloes.com.br/',
-     
     },
     {
-      
-      logo: '/public/whatsapp_2025-06-18_10-02-23.jpg',
+      logo: IMAGES.supporters.frigelar,
+      website: 'https://www.frigelar.com.br/?srsltid=AfmBOorFsi5oj9SF_-S3gZg1H2i6z5j3pKKZjvBmoNFhgRpSIYH70auo',
+    },
+    {
+      logo: IMAGES.supporters.pestanaLeiloes,
+      website: 'https://www.pestanaleiloes.com.br/',
+    },
+    {
+      logo: IMAGES.supporters.apoiador7,
       website: 'https://www.instagram.com/divasdaalegria?igsh=M2l3dG5pZXRuOG40',
-     
     }
-    ];
+  ];
 
   return (
     <section id="apoiadores" className="py-20 relative overflow-hidden">

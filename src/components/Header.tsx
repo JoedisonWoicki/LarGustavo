@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Menu, X, Phone, MapPin } from 'lucide-react';
+import { IMAGES } from '../config/images';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ const Header = () => {
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center gap-4">
             <img
-              src="/logotipo_lar.jpg"
+              src={IMAGES.logo}
               alt="Lar Gustavo Nordlund"
               className="h-6 w-auto animate-pulse-glow"
             />

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Shield, Users } from 'lucide-react';
+import { IMAGES } from '../config/images';
 
 const Hero = () => {
   return (
@@ -70,7 +71,7 @@ const Hero = () => {
           <div className="relative animate-slide-in-right">
             <div className="absolute inset-0 bg-gradient-to-r from-[#0e28be] to-purple-600 rounded-2xl blur-2xl opacity-20 animate-pulse-glow"></div>
             <img
-              src="public/captura_tela_2025-07-16.png"
+              src={IMAGES.hero}
               alt="Cuidado com idosos"
               className="relative z-10 rounded-2xl shadow-2xl hover-lift"
             />

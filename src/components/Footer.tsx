@@ -1,5 +1,6 @@
 import React from 'react';
 import { Heart, Phone, Mail, MapPin, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+import { IMAGES } from '../config/images';
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
           <div className="md:col-span-2 animate-slide-in-left">
             <div className="flex items-center gap-3 mb-4">
               <img
-                src="/logotipo_lar.jpg"
+                src={IMAGES.logo}
                 alt="Lar Gustavo Nordlund"
                 className="h-10 w-auto animate-pulse-glow"
               />
