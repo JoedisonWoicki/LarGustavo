@@ -159,7 +159,7 @@ const Donations = () => {
             </div>
           </div>
 
-          <div className="mt-6 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded-r-lg">
+          <div className="mt-6 p-4 bg-black-50 border-l-4 border-black-400 rounded-r-lg">
             <p className="text-yellow-200 text-sm">
               <strong>Importante:</strong> Após realizar sua doação, entre em contato conosco para confirmarmos o recebimento 
               e emitirmos o comprovante para dedução no Imposto de Renda, se aplicável.
