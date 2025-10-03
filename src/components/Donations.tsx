@@ -189,7 +189,7 @@ const Donations = () => {
 
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 mb-4">
                 <div className="flex items-start gap-2">
-                  <span className="text-yellow-600 font-bold">⚠️</span>
+                  <span className="text-black-600 font-bold">⚠️</span>
                   <div>
                     <p className="font-semibold text-yellow-200 mb-1">Importante:</p>
                     <p className="text-yellow-100 text-sm">
