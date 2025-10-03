@@ -179,7 +179,7 @@ const Communication = () => {
 ',
       date: '30 de Setembro, 2025',
       category: 'Parcerias',
-      excerpt: 'Firmamos parceria para estágios supervisionados em geriatria e gerontologia.',
+      excerpt: 'Firmamos parceria para estágios supervisionados com Técnicos de enfermagem e Fisiotepia.',
       image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
       fullContent: `
         <p>Temos o orgulho de anunciar uma parceria estratégica com a Universidade Federal do Rio Grande do Sul (UFRGS), que trará benefícios significativos tanto para o Lar Gustavo Nordlund quanto para a formação de novos profissionais especializados em cuidado geriátrico.</p>
