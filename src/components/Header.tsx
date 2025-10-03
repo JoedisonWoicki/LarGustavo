@@ -10,9 +10,9 @@ const Header = () => {
       <div className="bg-gradient-to-r from-slate-800 to-slate-700 text-white py-2">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
           <div className="flex items-center gap-4">
-            <img 
-              src="/logotipo lar.jpg" 
-              alt="Lar Gustavo Nordlund" 
+            <img
+              src="/logotipo_lar.jpg"
+              alt="Lar Gustavo Nordlund"
               className="h-6 w-auto animate-pulse-glow"
             />
             <div className="flex items-center gap-1 hover-glow transition-all duration-300">

@@ -16,9 +16,9 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2 animate-slide-in-left">
             <div className="flex items-center gap-3 mb-4">
-              <img 
-                src="/logotipo lar.jpg" 
-                alt="Lar Gustavo Nordlund" 
+              <img
+                src="/logotipo_lar.jpg"
+                alt="Lar Gustavo Nordlund"
                 className="h-10 w-auto animate-pulse-glow"
               />
               <div className="text-2xl font-bold gradient-text">Lar Gustavo Nordlund</div>

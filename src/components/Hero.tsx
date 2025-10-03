@@ -68,9 +68,9 @@ const Hero = () => {
           
           <div className="relative animate-slide-in-right">
             <div className="absolute inset-0 bg-gradient-to-r from-[#0e28be] to-purple-600 rounded-2xl blur-2xl opacity-20 animate-pulse-glow"></div>
-            <img 
-              src="public/Captura de tela 2025-07-16 155103.png" 
-              alt="Cuidado com idosos" 
+            <img
+              src="public/captura_tela_2025-07-16.png"
+              alt="Cuidado com idosos"
               className="relative z-10 rounded-2xl shadow-2xl hover-lift"
             />
             <div className="absolute -bottom-6 -left-6 glass p-6 rounded-xl shadow-2xl animate-float">

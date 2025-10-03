@@ -17,25 +17,25 @@ const Supporters = () => {
     },
     {
       
-      logo: 'public/Imagem do WhatsApp de 2025-06-18 à(s) 11.04.22_9973d740.jpg',
+      logo: 'public/whatsapp_2025-06-18_11-04-22.jpg',
       website: 'https://institutojardimeuropa.com.br/?fbclid=PAZXh0bgNhZW0CMTEAAacwl6Lm7VYRuN-XJGmYY_uTjQyXYYbHT1s5DLYlEJfzxr5_cLD4k29Rj7rqwg_aem_xjHS5384NYHQtMu_2ypBuw',
     
      },    
      {
       
-      logo: 'public/Imagem do WhatsApp de 2025-06-18 à(s) 10.42.15_0cf38c3e.jpg',
+      logo: 'public/whatsapp_2025-06-18_10-42-15.jpg',
       website: 'https://www.marquespan.com.br/',
     
     },
     {
       
-      logo: 'public/mada doces.jpg',
+      logo: 'public/mada_doces.jpg',
       website: 'https://www.instagram.com/madadocesartesanais/',
     
     },
     {
       
-      logo: 'public/Imagem do WhatsApp de 2025-06-18 à(s) 11.04.40_c68254a2.jpg',
+      logo: 'public/whatsapp_2025-06-18_11-04-40.jpg',
       website: 'https://www.instagram.com/petacolhe/',
     
     },
@@ -47,7 +47,7 @@ const Supporters = () => {
     },
     {
      
-      logo: '/public/Imagem do WhatsApp de 2025-06-18 à(s) 10.01.57_3b489ede.jpg',
+      logo: '/public/whatsapp_2025-06-18_10-01-57.jpg',
       website: 'https://www.atitus.edu.br',
      },
      {
@@ -63,7 +63,7 @@ const Supporters = () => {
     },
     {
       
-      logo: '/public/Imagem do WhatsApp de 2025-06-18 à(s) 10.02.23_6f41c43f.jpg',
+      logo: '/public/whatsapp_2025-06-18_10-02-23.jpg',
       website: 'https://www.instagram.com/divasdaalegria?igsh=M2l3dG5pZXRuOG40',
      
     }
