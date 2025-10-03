@@ -175,8 +175,9 @@ const Communication = () => {
       `
     },
     {
-      title: 'Nova Parceria com Universidade Local',
-      date: '10 de Dezembro, 2024',
+      title: 'Novos Talentos a Bordo: Começa a Jornada de Estágios na Saúde!
+',
+      date: '30 de Setembro, 2025',
       category: 'Parcerias',
       excerpt: 'Firmamos parceria para estágios supervisionados em geriatria e gerontologia.',
       image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
