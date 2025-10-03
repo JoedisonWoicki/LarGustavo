@@ -175,50 +175,34 @@ const Communication = () => {
       `
     },
     {
-      title: 'Novos Talentos a Bordo: Começa a Jornada de Estágios na Saúde!
-',
-      date: '30 de Setembro, 2025',
+      title: 'Novos Talentos a Bordo: Começa a Jornada de Estágios na Saúde!',
+      date: '1 de Setembro, 2025',
       category: 'Parcerias',
-      excerpt: 'Firmamos parceria para estágios supervisionados com Técnicos de enfermagem e Fisiotepia.',
+      excerpt: 'É com grande entusiasmo que anunciamos a chegada de novas turmas para o nosso programa de estágios em setembro!',
       image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
       fullContent: `
-        <p>Temos o orgulho de anunciar uma parceria estratégica com a Universidade Federal do Rio Grande do Sul (UFRGS), que trará benefícios significativos tanto para o Lar Gustavo Nordlund quanto para a formação de novos profissionais especializados em cuidado geriátrico.</p>
+        <p>É com grande entusiasmo que anunciamos a chegada de novas turmas para o nosso programa de estágios em setembro! Desta vez, demos as boas-vindas a estudantes dedicados das áreas técnicas de Enfermagem e Fisioterapia.</p>
 
-        <h3>Sobre a Parceria</h3>
-        <p>O convênio estabelecido prevê o recebimento de estudantes dos cursos de:</p>
+        <h3>A Importância da Prática na Formação em Saúde</h3>
+        <p>Acreditamos que a prática é o pilar da formação em saúde, e estamos muito felizes em abrir as portas para esses futuros profissionais. Aqui, eles terão a chance de aplicar o conhecimento teórico, desenvolver habilidades essenciais e vivenciar o dia a dia da área com o suporte de nossa equipe experiente.</p>
+
+        <h3>Informações sobre o Estágio</h3>
+        <p>Nosso programa de estágios foi estruturado para proporcionar uma experiência completa e enriquecedora:</p>
         <ul>
-          <li>Enfermagem</li>
-          <li>Fisioterapia</li>
-          <li>Nutrição</li>
-          <li>Psicologia</li>
-          <li>Serviço Social</li>
-          <li>Medicina (com foco em Geriatria)</li>
+          <li><strong>Duração inicial:</strong> 3 a 6 meses</li>
+          <li><strong>Áreas contempladas:</strong> Técnico de Enfermagem e Fisioterapia</li>
+          <li><strong>Possibilidade de renovação:</strong> Para estagiários que se destacarem e demonstrarem grande potencial</li>
+          <li><strong>Supervisão:</strong> Acompanhamento direto de profissionais experientes</li>
+          <li><strong>Aprendizado prático:</strong> Vivência real do cotidiano em cuidado geriátrico</li>
         </ul>
 
-        <h3>Benefícios para os Residentes</h3>
-        <p>Esta parceria trará diversos benefícios diretos para nossos residentes:</p>
-        <ul>
-          <li>Ampliação do atendimento profissional</li>
-          <li>Acesso a novas técnicas e conhecimentos</li>
-          <li>Maior atenção individualizada</li>
-          <li>Projetos de pesquisa focados em melhoria da qualidade de vida</li>
-          <li>Atividades educativas e culturais</li>
-        </ul>
+        <h3>Uma Excelente Oportunidade</h3>
+        <p>Esta é uma excelente oportunidade para um mergulho profundo e contínuo no universo da saúde! Os estagiários terão acesso a experiências práticas que farão diferença em suas carreiras profissionais.</p>
 
-        <h3>Formação de Qualidade</h3>
-        <p>Os estagiários terão oportunidade de:</p>
-        <ul>
-          <li>Praticar conhecimentos teóricos em ambiente real</li>
-          <li>Desenvolver competências específicas em gerontologia</li>
-          <li>Trabalhar em equipe multidisciplinar</li>
-          <li>Aprender com profissionais experientes</li>
-          <li>Contribuir com projetos de melhoria contínua</li>
-        </ul>
+        <h3>Boas-Vindas aos Novos Talentos</h3>
+        <p>Desejamos muito sucesso aos nossos novos estagiários nesta fase importante de suas carreiras! Que esta experiência seja transformadora e enriquecedora.</p>
 
-        <h3>Compromisso com a Excelência</h3>
-        <p>Esta parceria reforça nosso compromisso com a excelência no cuidado e com a formação de profissionais qualificados para atuar na área geriátrica. Os estágios começam em março de 2025 e terão supervisão rigorosa de nossa equipe e dos professores da universidade.</p>
-
-        <p>Acreditamos que esta integração entre academia e prática fortalecerá ainda mais a qualidade dos serviços prestados aos nossos residentes.</p>
+        <p><strong>Fique ligado no nosso blog para acompanhar as novidades e o desenvolvimento desses novos talentos!</strong></p>
       `
     }
   ];
