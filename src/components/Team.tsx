@@ -33,7 +33,7 @@ const Team = () => {
     <section id="equipe" className="py-20 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-800">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r%3D%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2260%22%20height%3D%2260%22%20viewBox%3D%220%200%2060%2060%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22none%22%20fill-rule%3D%22evenodd%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.1%22%3E%3Ccircle%20cx%3D%2230%22%20cy%3D%2230%22%20r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
         <div className="absolute top-20 left-20 w-72 h-72 bg-[#6c70e5] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
         <div className="absolute bottom-20 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
       </div>
@@ -55,7 +55,7 @@ const Team = () => {
           {teamAreas.map((area, index) => (
             <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
                   <area.icon className="text-white" size={28} />
                 </div>
                 <div>
@@ -72,7 +72,7 @@ const Team = () => {
               <div className="grid grid-cols-2 gap-2">
                 {area.professionals.map((prof, profIndex) => (
                   <div key={profIndex} className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full animate-pulse-glow"></div>
+                    <div className="w-2 h-2 bg-gradient-to-r from-[#29478f] to-purple-400 rounded-full animate-pulse-glow"></div>
                     <span className="text-sm text-slate-400">{prof}</span>
                   </div>
                 ))}
@@ -107,7 +107,7 @@ const Team = () => {
         <div className="mt-16 text-center">
           <div className="glass-dark p-12 rounded-2xl shadow-2xl hover-lift animate-fade-in-up">
             <div className="flex justify-center mb-6">
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
                 <Heart className="text-white" size={36} />
               </div>
             </div>

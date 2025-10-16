@@ -80,7 +80,7 @@ const Transparency = () => {
           {transparencyAreas.map((area, index) => (
             <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
               <div className="flex items-center gap-4 mb-6">
-                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
                   <area.icon className="text-white" size={28} />
                 </div>
                 <h3 className="text-2xl font-bold text-white text-glow">
@@ -97,10 +97,10 @@ const Transparency = () => {
                 {area.documents.map((doc, docIndex) => (
                   <div key={docIndex} className="flex items-center justify-between glass p-3 rounded-lg shadow-sm hover-lift">
                     <div className="flex items-center gap-2">
-                      <FileText className="text-[#0e28be] animate-pulse-glow" size={16} />
+                      <FileText className="text-[#29478f] animate-pulse-glow" size={16} />
                       <span className="text-white text-sm">{doc}</span>
                     </div>
-                    <button className="flex items-center gap-1 text-[#0e28be] hover:text-purple-400 transition-colors text-sm font-semibold">
+                    <button className="flex items-center gap-1 text-[#29478f] hover:text-purple-400 transition-colors text-sm font-semibold">
                       <Download size={14} />
                       <span>Baixar</span>
                     </button>
@@ -154,7 +154,7 @@ const Transparency = () => {
         <div className="glass-dark rounded-2xl p-8 text-white mb-16 shadow-2xl hover-lift animate-fade-in-up">
           <div className="text-center mb-8">
             <div className="flex justify-center mb-4">
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
                 <Eye className="text-white" size={28} />
               </div>
             </div>

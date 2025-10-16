@@ -56,7 +56,7 @@ const Donations = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {donationMethods.map((method, index) => (
             <div key={index} className="glass-dark p-6 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
                 <method.icon className="text-white" size={24} />
               </div>
               
@@ -71,7 +71,7 @@ const Donations = () => {
               <ul className="space-y-1">
                 {method.details.map((detail, detailIndex) => (
                   <li key={detailIndex} className="flex items-center gap-2 text-xs">
-                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#0e28be] to-purple-400 rounded-full flex-shrink-0 animate-pulse-glow"></div>
+                    <div className="w-1.5 h-1.5 bg-gradient-to-r from-[#29478f] to-purple-400 rounded-full flex-shrink-0 animate-pulse-glow"></div>
                     <span className="text-slate-400">{detail}</span>
                   </li>
                 ))}
@@ -95,7 +95,7 @@ const Donations = () => {
             {/* PIX */}
             <div className="glass p-6 rounded-xl text-white shadow-2xl hover-lift">
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <CreditCard className="text-white" size={24} />
                 </div>
                 <h4 className="text-xl font-bold">PIX</h4>
@@ -108,7 +108,7 @@ const Donations = () => {
                   alt="QR Code PIX para doação"
                   className="w-32 h-32 mx-auto mb-2"
                 />
-                <p className="text-[#0e28be] text-sm font-semibold">
+                <p className="text-[#29478f] text-sm font-semibold">
                   Escaneie o QR Code para doar via PIX
                 </p>
               </div>
@@ -132,7 +132,7 @@ const Donations = () => {
             {/* Bank Transfer */}
             <div className="glass-dark p-6 rounded-xl shadow-2xl hover-lift">
               <div className="flex items-center gap-3 mb-4">
-                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Receipt className="text-white" size={24} />
                 </div>
                 <h4 className="text-xl font-bold text-white text-glow">Dados Bancários</h4>
@@ -175,7 +175,7 @@ const Donations = () => {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-16 h-16 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Receipt className="text-white" size={28} />
                 </div>
                 <div>
@@ -214,7 +214,7 @@ const Donations = () => {
               
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
+                  <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
                     1
                   </div>
                   <div>
@@ -224,7 +224,7 @@ const Donations = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
+                  <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
                     2
                   </div>
                   <div>
@@ -234,7 +234,7 @@ const Donations = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
+                  <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
                     3
                   </div>
                   <div>
@@ -244,7 +244,7 @@ const Donations = () => {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
+                  <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold animate-pulse-glow">
                     4
                   </div>
                   <div>
@@ -314,7 +314,7 @@ const Donations = () => {
 
           <div className="grid md:grid-cols-3 gap-6 text-center">
             <div>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
                 <Heart className="text-white" size={20} />
               </div>
               <h5 className="font-bold text-white mb-1 text-glow">Doações</h5>
@@ -322,7 +322,7 @@ const Donations = () => {
             </div>
             
             <div>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
                 <Users className="text-white" size={20} />
               </div>
               <h5 className="font-bold text-white mb-1 text-glow">Voluntariado</h5>
@@ -330,7 +330,7 @@ const Donations = () => {
             </div>
             
             <div>
-              <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 animate-pulse-glow">
                 <CheckCircle className="text-white" size={20} />
               </div>
               <h5 className="font-bold text-white mb-1 text-glow">Parcerias</h5>

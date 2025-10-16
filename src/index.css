@@ -4,7 +4,7 @@
 
 /* Custom CSS Variables */
 :root {
-  --primary-gradient: linear-gradient(135deg, #1e3a8a 0%, #3730a3 50%, #1e40af 100%);
+  --primary-gradient: linear-gradient(135deg, #1e306a 0%, #29478f 50%, #3a5a9f 100%);
   --secondary-gradient: linear-gradient(135deg, #dc2626 0%, #ef4444 50%, #f87171 100%);
   --glass-bg: rgba(255, 255, 255, 0.1);
   --glass-border: rgba(255, 255, 255, 0.2);
@@ -42,7 +42,7 @@ body {
   }
   
   .gradient-text {
-    background: linear-gradient(135deg, #0e28be, #8b5cf6, #06b6d4);
+    background: linear-gradient(135deg, #29478f, #8b5cf6, #06b6d4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -50,7 +50,7 @@ body {
   
   .gradient-border {
     position: relative;
-    background: linear-gradient(135deg, #0e28be, #3730a3, #1e40af);
+    background: linear-gradient(135deg, #29478f, #3a5a9f, #1e306a);
     padding: 2px;
     border-radius: 12px;
   }
@@ -60,7 +60,7 @@ body {
     position: absolute;
     inset: 0;
     padding: 2px;
-    background: linear-gradient(135deg, #0e28be, #8b5cf6, #06b6d4);
+    background: linear-gradient(135deg, #29478f, #8b5cf6, #06b6d4);
     border-radius: inherit;
     mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     mask-composite: exclude;
@@ -75,10 +75,10 @@ body {
 
 @keyframes pulse-glow {
   0%, 100% { 
-    box-shadow: 0 0 20px rgba(14, 40, 190, 0.5);
+    box-shadow: 0 0 20px rgba(41, 71, 143, 0.5);
   }
   50% { 
-    box-shadow: 0 0 30px rgba(14, 40, 190, 0.8), 0 0 40px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 0 30px rgba(41, 71, 143, 0.8), 0 0 40px rgba(139, 92, 246, 0.3);
   }
 }
 
@@ -175,7 +175,7 @@ body {
 }
 
 .hover-glow:hover {
-  box-shadow: 0 0 30px rgba(14, 40, 190, 0.6);
+  box-shadow: 0 0 30px rgba(41, 71, 143, 0.6);
 }
 
 /* Custom Scrollbar */
@@ -188,20 +188,20 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #0e28be, #8b5cf6);
+  background: linear-gradient(135deg, #29478f, #8b5cf6);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #1a3bc7, #7c3aed);
+  background: linear-gradient(135deg, #3a5a9f, #7c3aed);
 }
 
 /* Loading Spinner */
 .loading-spinner {
   width: 40px;
   height: 40px;
-  border: 4px solid rgba(14, 40, 190, 0.2);
-  border-left: 4px solid #0e28be;
+  border: 4px solid rgba(41, 71, 143, 0.2);
+  border-left: 4px solid #29478f;
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
@@ -242,7 +242,7 @@ body {
 
 /* Gradient Buttons */
 .btn-gradient {
-  background: linear-gradient(135deg, #0e28be, #8b5cf6, #06b6d4);
+  background: linear-gradient(135deg, #29478f, #8b5cf6, #06b6d4);
   background-size: 200% 200%;
   transition: all 0.3s ease;
 }
@@ -250,7 +250,7 @@ body {
 .btn-gradient:hover {
   background-position: right center;
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(14, 40, 190, 0.4);
+  box-shadow: 0 10px 25px rgba(41, 71, 143, 0.4);
 }
 
 /* Form Enhancements */
@@ -263,13 +263,13 @@ body {
 
 .form-input:focus {
   background: rgba(255, 255, 255, 0.15);
-  border-color: #0e28be;
-  box-shadow: 0 0 20px rgba(14, 40, 190, 0.3);
+  border-color: #29478f;
+  box-shadow: 0 0 20px rgba(41, 71, 143, 0.3);
 }
 
 /* Typography Enhancements */
 .text-glow {
-  text-shadow: 0 0 20px rgba(14, 40, 190, 0.5);
+  text-shadow: 0 0 20px rgba(41, 71, 143, 0.5);
 }
 
 /* Responsive Enhancements */
@@ -295,12 +295,12 @@ body {
 
 /* Article Modal Content Styles */
 .prose h3 {
-  color: #0e28be;
+  color: #29478f;
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  background: linear-gradient(135deg, #0e28be, #8b5cf6);
+  background: linear-gradient(135deg, #29478f, #8b5cf6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -331,7 +331,7 @@ body {
   content: '✓';
   position: absolute;
   left: 0;
-  color: #0e28be;
+  color: #29478f;
   font-weight: bold;
 }
 

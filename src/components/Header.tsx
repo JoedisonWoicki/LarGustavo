@@ -17,7 +17,7 @@ const Header = () => {
               className="h-6 w-auto animate-pulse-glow"
             />
             <div className="flex items-center gap-1 hover-glow transition-all duration-300">
-              <Phone size={15} className="text-blue-400" />
+              <Phone size={15} className="text-[#29478f]" />
               <span>(51) 3386-1125</span>
             </div>
             <div className="flex items-center gap-1 hover-glow transition-all duration-300">
@@ -40,34 +40,34 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <a href="#inicio" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#inicio" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Início
             </a>
-            <a href="#sobre" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#sobre" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Sobre Nós
             </a>
-            <a href="#servicos" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#servicos" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Serviços
             </a>
-            <a href="#equipe" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#equipe" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Equipe
             </a>
-            <a href="#comunicacao" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#comunicacao" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Comunicação
             </a>
-            <a href="#apoiadores" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#apoiadores" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Apoiadores
             </a>
-            <a href="#doacoes" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#doacoes" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Como Doar
             </a>
-            <a href="#trabalhe-conosco" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#trabalhe-conosco" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Trabalhe Conosco
             </a>
-            <a href="#transparencia" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#transparencia" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Transparência
             </a>
-            <a href="#feedback" className="text-white hover:text-[#0e28be] transition-all duration-300 font-medium hover-glow">
+            <a href="#feedback" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Feedback
             </a>
             <a href="#contato" className="btn-gradient text-white px-4 py-2 rounded-lg font-medium hover-lift">
@@ -78,7 +78,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-white hover:text-[#0e28be] transition-colors"
+            className="md:hidden text-white hover:text-[#29478f] transition-colors"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -94,34 +94,34 @@ const Header = () => {
               </div>
             </div>
             <div className="flex flex-col space-y-3">
-              <a href="#inicio" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#inicio" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Início
               </a>
-              <a href="#sobre" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#sobre" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Sobre Nós
               </a>
-              <a href="#servicos" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#servicos" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Serviços
               </a>
-              <a href="#equipe" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#equipe" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Equipe
               </a>
-              <a href="#comunicacao" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#comunicacao" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Comunicação
               </a>
-              <a href="#apoiadores" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#apoiadores" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Apoiadores
               </a>
-              <a href="#doacoes" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#doacoes" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Como Doar
               </a>
-              <a href="#trabalhe-conosco" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#trabalhe-conosco" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Trabalhe Conosco
               </a>
-              <a href="#transparencia" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#transparencia" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Transparência
               </a>
-              <a href="#feedback" className="text-white hover:text-[#0e28be] transition-colors font-medium">
+              <a href="#feedback" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Feedback
               </a>
               <a href="#contato" className="btn-gradient text-white px-4 py-2 rounded-lg font-medium text-center hover-lift">

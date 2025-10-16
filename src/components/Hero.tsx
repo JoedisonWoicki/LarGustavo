@@ -8,7 +8,7 @@ const Hero = () => {
       {/* Animated Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width=%2260%22%20height=%2260%22%20viewBox=%220%200%2060%2060%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg%20fill=%22none%22%20fill-rule=%22evenodd%22%3E%3Cg%20fill=%22%239C92AC%22%20fill-opacity=%220.1%22%3E%3Ccircle%20cx=%2230%22%20cy=%2230%22%20r=%222%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
-        <div className="absolute top-20 left-20 w-72 h-72 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
+        <div className="absolute top-20 left-20 w-72 h-72 bg-[#29478f] rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float"></div>
         <div className="absolute top-40 right-20 w-72 h-72 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '2s'}}></div>
         <div className="absolute bottom-20 left-1/2 w-72 h-72 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-float" style={{animationDelay: '4s'}}></div>
       </div>
@@ -53,7 +53,7 @@ const Hero = () => {
               </div>
               <div className="text-center glass-dark p-4 rounded-xl hover-lift">
                 <div className="flex justify-center mb-2 animate-pulse-glow" style={{animationDelay: '0.5s'}}>
-                  <Users className="text-[#0e28be]" size={32} />
+                  <Users className="text-[#29478f]" size={32} />
                 </div>
                 <div className="text-2xl font-bold text-white">70+</div>
                 <div className="text-slate-300 text-sm">Residentes</div>
@@ -69,14 +69,14 @@ const Hero = () => {
           </div>
           
           <div className="relative animate-slide-in-right">
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0e28be] to-purple-600 rounded-2xl blur-2xl opacity-20 animate-pulse-glow"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-[#29478f] to-purple-600 rounded-2xl blur-2xl opacity-20 animate-pulse-glow"></div>
             <img
               src={IMAGES.hero}
               alt="Cuidado com idosos"
               className="relative z-10 rounded-2xl shadow-2xl hover-lift"
             />
             <div className="absolute -bottom-6 -left-6 glass p-6 rounded-xl shadow-2xl animate-float">
-              <div className="text-[#0e28be] text-sm font-semibold mb-1">Localização</div>
+              <div className="text-[#29478f] text-sm font-semibold mb-1">Localização</div>
               <div className="text-white">Porto Alegre, RS</div>
             </div>
           </div>

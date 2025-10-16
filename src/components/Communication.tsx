@@ -212,7 +212,7 @@ const Communication = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-purple-900">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M20%2020c0-11.046-8.954-20-20-20v20h20z%22/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
-        <div className="absolute top-40 right-20 w-96 h-96 bg-[#0e28be] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
+        <div className="absolute top-40 right-20 w-96 h-96 bg-[#29478f] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
         <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
       </div>
       
@@ -263,7 +263,7 @@ const Communication = () => {
                 
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
-                    <Calendar size={16} className="text-[#0e28be] animate-pulse-glow" />
+                    <Calendar size={16} className="text-[#29478f] animate-pulse-glow" />
                     <span>{article.date}</span>
                   </div>
                   
@@ -277,7 +277,7 @@ const Communication = () => {
                   
                   <button
                     onClick={() => setSelectedArticle(index)}
-                    className="flex items-center gap-2 text-[#0e28be] font-semibold hover:gap-3 transition-all hover-glow"
+                    className="flex items-center gap-2 text-[#29478f] font-semibold hover:gap-3 transition-all hover-glow"
                   >
                     <span>Leia mais</span>
                     <ArrowRight size={16} />
@@ -303,7 +303,7 @@ const Communication = () => {
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 required
-                className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#0e28be]"
+                className="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-[#29478f]"
               />
               <button 
                 type="submit"
@@ -331,7 +331,7 @@ const Communication = () => {
             {testimonials.map((testimonial, index) => (
               <div key={index} className="glass-dark p-8 rounded-xl shadow-2xl relative hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
                 <div className="absolute -top-4 left-8">
-                  <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                  <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                     <Quote className="text-white" size={24} />
                   </div>
                 </div>
@@ -361,7 +361,7 @@ const Communication = () => {
         {/* Communication CTA */}
         <div className="glass-dark rounded-2xl p-8 text-center text-white shadow-2xl hover-lift animate-fade-in-up">
           <div className="flex justify-center mb-6">
-            <div className="bg-gradient-to-r from-[#0e28be] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
+            <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-20 h-20 rounded-full flex items-center justify-center animate-pulse-glow">
               <Phone className="text-white" size={36} />
             </div>
           </div>
@@ -421,7 +421,7 @@ const Communication = () => {
             {/* Article Content */}
             <div className="p-8">
               <div className="flex items-center gap-2 text-slate-400 text-sm mb-4">
-                <Calendar size={16} className="text-[#0e28be]" />
+                <Calendar size={16} className="text-[#29478f]" />
                 <span>{news[selectedArticle].date}</span>
               </div>
 
