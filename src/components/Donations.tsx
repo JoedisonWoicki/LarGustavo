@@ -101,32 +101,33 @@ const Donations = () => {
                 <h4 className="text-xl font-bold">PIX</h4>
               </div>
               
-             {/* QR Code PIX */}
-<div className="bg-white p-4 rounded-lg mb-4 text-center">
-  <img
-    src="https://drive.google.com/uc?export=view&id=1MVNQle8M2opLzfsAI5NNE6jujgzpEFlj"
-    alt="QR Code PIX para doação"
-    className="w-32 h-32 mx-auto mb-2"
-  />
-  <p className="text-[#0e28be] text-sm font-semibold">
-    Escaneie o QR Code para doar via PIX
-  </p>
-</div>
-
-<div className="space-y-2">
-  <div>
-    <span className="text-slate-300 text-sm">Chave PIX:</span>
-    <div className="font-mono text-lg font-bold gradient-text">(51) 9818-41594</div>
-  </div>
-  <div>
-    <span className="text-slate-300 text-sm">Favorecido:</span>
-    <div className="font-semibold">LAR GUSTAVO NORDLUND</div>
-  </div>
-  <div>
-    <span className="text-slate-300 text-sm">CNPJ:</span>
-    <div className="font-mono">88.173.968/000-60</div>
-  </div>
-</div>
+              {/* QR Code PIX */}
+              <div className="bg-white p-4 rounded-lg mb-4 text-center">
+                <img
+                  src={IMAGES.pixQr}
+                  alt="QR Code PIX para doação"
+                  className="w-32 h-32 mx-auto mb-2"
+                />
+                <p className="text-[#29478f] text-sm font-semibold">
+                  Escaneie o QR Code para doar via PIX
+                </p>
+              </div>
+              
+              <div className="space-y-2">
+                <div>
+                  <span className="text-slate-300 text-sm">Chave PIX:</span>
+                  <div className="font-mono text-lg font-bold gradient-text">(51) 9818-41594</div>
+                </div>
+                <div>
+                  <span className="text-slate-300 text-sm">Favorecido:</span>
+                  <div className="font-semibold">LAR GUSTAVO NORDLUND</div>
+                </div>
+                <div>
+                  <span className="text-slate-300 text-sm">CNPJ:</span>
+                  <div className="font-mono">88.173.968/000-60</div>
+                </div>
+              </div>
+            </div>
 
             {/* Bank Transfer */}
             <div className="glass-dark p-6 rounded-xl shadow-2xl hover-lift">
