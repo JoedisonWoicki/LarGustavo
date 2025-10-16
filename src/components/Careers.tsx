@@ -266,7 +266,7 @@ const Careers = () => {
                     value={formData.position}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white"
+                    className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-gray-800"
                   >
                     <option value="">Selecione um cargo</option>
                     {positions.map((position, index) => (
@@ -317,7 +317,7 @@ const Careers = () => {
                   value={formData.availability}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-white"
+                  className="w-full px-4 py-3 glass rounded-lg focus:ring-2 focus:ring-[#0e28be] focus:border-transparent text-gray-800"
                 >
                   <option value="">Selecione sua disponibilidade</option>
                   <option value="integral">Período Integral (8h)</option>
