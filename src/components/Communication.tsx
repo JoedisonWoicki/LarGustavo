@@ -47,10 +47,10 @@ const Communication = () => {
 
   const testimonials = [
     {
-      name: 'Maria Silva',
-      relationship: 'Filha de residente',
+      name: 'Joédison Moraes Woicki',
+      relationship: 'Filho da residente',
       content: 'Há 3 anos minha mãe vive no Lar Gustavo Nordlund e não poderia estar mais satisfeita. O cuidado é exemplar e ela se sente verdadeiramente em casa. A equipe é atenciosa e profissional.',
-      rating: 5
+      rating: 4
     },
     {
       name: 'João Santos',
