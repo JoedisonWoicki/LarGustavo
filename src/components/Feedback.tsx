@@ -155,7 +155,7 @@ const Feedback = () => {
                 value={formData.type}
                 onChange={handleChange}
                 required
-                className="w-full glass text-white py-4 px-6 rounded-lg font-semibold focus:ring-2 focus:ring-[#0e28be] focus:border-transparent"
+                className="w-full glass text-gray-800 py-4 px-6 rounded-lg font-semibold focus:ring-2 focus:ring-[#0e28be] focus:border-transparent"
               >
                 <option value="">Selecione o tipo de feedback</option>
                 <option value="sugestao">Sugestão</option>
