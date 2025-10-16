@@ -112,10 +112,10 @@ const Careers = () => {
   return (
     <section id="trabalhe-conosco" className="py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-purple-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M20%2020c0-11.046-8.954-20-20-20v20h20z%22/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
         <div className="absolute top-40 right-20 w-96 h-96 bg-[#29478f] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
-        <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4">
@@ -135,7 +135,7 @@ const Careers = () => {
         <div className="grid md:grid-cols-4 gap-6 mb-16">
           {benefits.map((benefit, index) => (
             <div key={index} className="text-center glass-dark p-6 rounded-xl shadow-2xl hover-lift interactive-card animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
-              <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
+              <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-glow">
                 <benefit.icon className="text-white" size={24} />
               </div>
               <h4 className="font-bold text-white mb-2 text-glow">{benefit.title}</h4>
@@ -153,7 +153,7 @@ const Careers = () => {
             
             <div className="space-y-6">
               <div className="flex gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
                   <Heart className="text-white" size={16} />
                 </div>
                 <div>
@@ -165,7 +165,7 @@ const Careers = () => {
               </div>
 
               <div className="flex gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
                   <Award className="text-white" size={16} />
                 </div>
                 <div>
@@ -177,7 +177,7 @@ const Careers = () => {
               </div>
 
               <div className="flex gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mt-1 animate-pulse-glow">
                   <Users className="text-white" size={16} />
                 </div>
                 <div>

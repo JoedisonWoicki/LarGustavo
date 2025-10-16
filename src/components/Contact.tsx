@@ -53,10 +53,10 @@ const Contact = () => {
   return (
     <section id="contato" className="py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-purple-900">
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-blue-900">
         <div className="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cg%20fill%3D%22%239C92AC%22%20fill-opacity%3D%220.05%22%3E%3Cpath%20d%3D%22M20%2020c0-11.046-8.954-20-20-20v20h20z%22/%3E%3C/g%3E%3C/svg%3E')] opacity-30"></div>
         <div className="absolute top-40 right-20 w-96 h-96 bg-[#29478f] rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float"></div>
-        <div className="absolute bottom-40 left-20 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-40 left-20 w-96 h-96 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-float" style={{animationDelay: '3s'}}></div>
       </div>
       
       <div className="max-w-6xl mx-auto px-4">
@@ -81,7 +81,7 @@ const Contact = () => {
             
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
@@ -92,7 +92,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
@@ -103,7 +103,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <MapPin className="text-white" size={20} />
                 </div>
                 <div>
@@ -116,7 +116,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="bg-gradient-to-r from-[#29478f] to-purple-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
+                <div className="bg-gradient-to-r from-[#29478f] to-blue-500 w-12 h-12 rounded-full flex items-center justify-center animate-pulse-glow">
                   <Clock className="text-white" size={20} />
                 </div>
                 <div>
