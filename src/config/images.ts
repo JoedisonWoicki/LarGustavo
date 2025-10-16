@@ -7,9 +7,8 @@ export function getImageUrl(filename: string): string {
 
 export const IMAGES = {
   logo: getImageUrl('logotipo_lar.jpg'),
-  // Usando o URL direto do Google Drive para o QR Code do PIX, conforme o guia de upload,
-  // para garantir que a imagem seja carregada corretamente.
-  pixQr: 'https://drive.google.com/uc?export=view&id=1MVNQle8M2opLzfsAI5NNE6jujgzpEFlj',
+  // Usando getImageUrl para o QR Code do PIX, assumindo que 'pix_lar.png' foi carregado no Supabase Storage.
+  pixQr: getImageUrl('pix_lar.png'), 
   hero: getImageUrl('captura_tela_2025-07-16.png'),
   supporters: {
     apoiador1: getImageUrl('01J2BW8W8WWSPYQPVF9YGZ6B8Z.jpg'),
