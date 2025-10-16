@@ -49,7 +49,7 @@ const Communication = () => {
     {
       name: 'Joédison Moraes Woicki',
       relationship: 'Filho da residente',
-      content: 'Há 3 anos minha mãe vive no Lar Gustavo Nordlund e não poderia estar mais satisfeita. O cuidado é exemplar e ela se sente verdadeiramente em casa. A equipe é atenciosa e profissional.',
+      content: 'Há três anos, minha mãe reside no Lar, onde recebe refeições bem preparadas e nutritivas. Por conta de convênios com faculdades, o local conta com a presença constante de estagiários, o que torna o ambiente bastante dinâmico e animado, com diversos eventos. É um espaço muito agradável e acolhedor.',
       rating: 4
     },
     {
