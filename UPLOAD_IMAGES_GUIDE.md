@@ -26,7 +26,7 @@ As seguintes imagens precisam ser uploadadas da pasta `public/`:
 6. **logotipo_lar.jpg** - Logotipo principal do Lar
 7. **mada_doces.jpg** - Logo Mada Doces
 8. **pestana_leiloes_logo.jpeg** - Logo Pestana Leilões
-9. **https://drive.google.com/file/d/1MVNQle8M2opLzfsAI5NNE6jujgzpEFlj/view?usp=drive_link** - QR Code PIX para doações
+9. **https: // drive.google.com/uc?export=view&id=1MVNQle8M2opLzfsAI5NNE6jujgzpEFlj ** - QR Code PIX para doações
 10. **whatsapp_2025-06-18_10-01-57.jpg** - Imagem de apoiador
 11. **whatsapp_2025-06-18_10-02-23.jpg** - Imagem de apoiador
 12. **whatsapp_2025-06-18_10-42-15.jpg** - Imagem de apoiador
