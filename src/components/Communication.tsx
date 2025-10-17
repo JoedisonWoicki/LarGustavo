@@ -119,7 +119,7 @@ Também registramos nossa profunda gratidão aos parceiros que contribuíram par
           <li>Instituto Jardim Europa / Confraria Feminina do Jardim Europa
 </li>
           <li>Asun</li>
-          <li>Intercity Hotel</li>
+          <li>Intercity Hotels</li>
           <li>AEL Consultoria e Sistema</li>
         </ul>
 
