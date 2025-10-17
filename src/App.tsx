@@ -12,6 +12,7 @@ import Transparency from './components/Transparency';
 import Contact from './components/Contact';
 import Feedback from './components/Feedback';
 import Footer from './components/Footer';
+import WhatsAppButton from './components/WhatsAppButton'; // Importando o novo componente
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
       <Contact />
       <Feedback />
       <Footer />
+      <WhatsAppButton /> {/* Adicionando o botão flutuante do WhatsApp */}
     </div>
   );
 }
