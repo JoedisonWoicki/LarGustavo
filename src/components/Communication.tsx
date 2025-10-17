@@ -119,7 +119,7 @@ Também registramos nossa profunda gratidão aos parceiros que contribuíram par
           <li>Instituto Jardim Europa / Confraria Feminina do Jardim Europa
 </li>
           <li>Asun</li>
-          <li>Sobremesas: rabanada, salada de frutas e sorvete</li>
+          <li>AEL Consultoria e Sistema</li>
         </ul>
 
         <h3>Atividades e Diversão</h3>
