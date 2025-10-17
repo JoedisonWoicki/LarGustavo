@@ -2,7 +2,7 @@ import React from 'react';
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppButton = () => {
-  const phoneNumber = '5551999999999'; // Substitua pelo número de telefone do WhatsApp
+  const phoneNumber = '555133861125'; // Substitua pelo número de telefone do WhatsApp
   const message = 'Olá, gostaria de mais informações sobre o Lar Gustavo Nordlund.'; // Mensagem pré-definida
 
   return (
