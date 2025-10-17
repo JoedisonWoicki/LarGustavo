@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Menu, X, Phone, MapPin } from 'lucide-react';
+import { Menu, X, Phone, MapPin, Image } from 'lucide-react'; // Importando Image para o ícone da galeria
 import { IMAGES } from '../config/images';
+import { Link } from 'react-router-dom'; // Importando Link para navegação
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -55,6 +56,9 @@ const Header = () => {
             <a href="#comunicacao" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Comunicação
             </a>
+            <Link to="/galeria" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow flex items-center gap-1">
+              <Image size={16} /> Galeria
+            </Link>
             <a href="#apoiadores" className="text-white hover:text-[#29478f] transition-all duration-300 font-medium hover-glow">
               Apoiadores
             </a>
@@ -109,6 +113,9 @@ const Header = () => {
               <a href="#comunicacao" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Comunicação
               </a>
+              <Link to="/galeria" className="text-white hover:text-[#29478f] transition-colors font-medium flex items-center gap-1">
+                <Image size={16} /> Galeria
+              </Link>
               <a href="#apoiadores" className="text-white hover:text-[#29478f] transition-colors font-medium">
                 Apoiadores
               </a>

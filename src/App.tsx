@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -12,26 +13,36 @@ import Transparency from './components/Transparency';
 import Contact from './components/Contact';
 import Feedback from './components/Feedback';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton'; // Importando o novo componente
+import WhatsAppButton from './components/WhatsAppButton';
+import GalleryPage from './pages/GalleryPage'; // Importando a nova página da galeria
 
 function App() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <Hero />
-      <About />
-      <Services />
-      <Team />
-      <Communication />
-      <Supporters />
-      <Donations />
-      <Careers />
-      <Transparency />
-      <Contact />
-      <Feedback />
-      <Footer />
-      <WhatsAppButton /> {/* Adicionando o botão flutuante do WhatsApp */}
-    </div>
+    <BrowserRouter>
+      <div className="min-h-screen">
+        <Header />
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero />
+              <About />
+              <Services />
+              <Team />
+              <Communication />
+              <Supporters />
+              <Donations />
+              <Careers />
+              <Transparency />
+              <Contact />
+              <Feedback />
+            </>
+          } />
+          <Route path="/galeria" element={<GalleryPage />} />
+        </Routes>
+        <Footer />
+        <WhatsAppButton />
+      </div>
+    </BrowserRouter>
   );
 }
 
