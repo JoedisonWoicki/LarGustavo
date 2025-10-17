@@ -103,7 +103,7 @@ const Communication = () => {
       title: 'Festa de Ano Novo com as Famílias',
       date: '21 de Setembro, 2025',
       category: 'Eventos',
-      excerpt: 'Celebramos a chegada de 2025 com uma festa especial reunindo residentes, famílias e equipe.',
+      excerpt: 'No dia 21 de setembro, o Lar Gustavo Nordlund celebrou com gratidão e alegria seus 76 anos de história.',
       image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800',
       fullContent: `
         <p>A virada do ano de 2024 para 2025 foi celebrada com muito amor, alegria e união no Lar Gustavo Nordlund. Nossa tradicional festa de Réveillon reuniu residentes, familiares e toda a equipe em uma noite inesquecível.</p>
