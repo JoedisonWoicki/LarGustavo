@@ -114,7 +114,7 @@ const Communication = () => {
 Também registramos nossa profunda gratidão aos parceiros que contribuíram para tornar essa data ainda mais especial:
 </p>
         <ul>
-          <li>Marques</li>
+          <li>Marquespan</li>
           <li>Arroz à grega</li>
           <li>Farofa especial</li>
           <li>Saladas variadas</li>
