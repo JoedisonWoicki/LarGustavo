@@ -100,7 +100,7 @@ const Communication = () => {
       `
     },
     {
-      title: 'Festa de Ano Novo com as Famílias',
+      title: 'Festa do Lar Gustavo Nordlund🎉.',
       date: '21 de Setembro, 2025',
       category: 'Eventos',
       excerpt: 'No dia 21 de setembro, o Lar Gustavo Nordlund celebrou com gratidão e alegria seus 76 anos de história.',
