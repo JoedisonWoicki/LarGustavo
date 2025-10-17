@@ -109,7 +109,9 @@ const Communication = () => {
         <p>No dia 21 de setembro, o Lar Gustavo Nordlund celebrou, com gratidão e alegria, seus 76 anos de história, reunindo residentes, familiares e toda a equipe em uma tarde inesquecível. Foi um momento especial para comemorar uma trajetória marcada pelo acolhimento, respeito e amor ao próximo, reafirmando nosso compromisso em oferecer aos idosos um ambiente digno, humano e cheio de carinho.</p>
 
         <h3>Uma Celebração Especial</h3>
-        <p>O evento começou às 20h com um jantar especial preparado pela nossa equipe de nutrição e cozinha. O cardápio incluiu pratos tradicionais da data, todos adaptados para as necessidades dietéticas de nossos residentes:</p>
+        <p>
+Esta comemoração especial contou com momentos inesquecíveis, marcados pela presença da Banda da Brigada Militar, do PFI (Projeto Filhos de Issacar), do Exército de Débora e das Divas da Alegria, que trouxeram música, emoção e alegria a todos os presentes.
+</p>
         <ul>
           <li>Peru assado com molho de frutas</li>
           <li>Arroz à grega</li>
