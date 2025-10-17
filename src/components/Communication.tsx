@@ -101,7 +101,7 @@ const Communication = () => {
     },
     {
       title: 'Festa de Ano Novo com as Famílias',
-      date: '31 de Dezembro, 2024',
+      date: '21 de Setembro, 2025',
       category: 'Eventos',
       excerpt: 'Celebramos a chegada de 2025 com uma festa especial reunindo residentes, famílias e equipe.',
       image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800',
