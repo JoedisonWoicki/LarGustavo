@@ -106,7 +106,7 @@ const Communication = () => {
       excerpt: 'No dia 21 de setembro, o Lar Gustavo Nordlund celebrou com gratidão e alegria seus 76 anos de história.',
       image: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800',
       fullContent: `
-        <p>No dia 21 de setembro, o Lar Gustavo Nordlund celebrou com gratidão e alegria seus 76 anos de história reunindo residentes e familiares e toda equipe em uma tarde inesquecível .Comemorando uma trajetória marcada pelo acolhimento, respeito e amor ao próximo, oferecendo aos nossos idosos um ambiente digno, humano e cheio de carinho.</p>
+        <p>No dia 21 de setembro, o Lar Gustavo Nordlund celebrou com gratidão e alegria seus 76 anos de história reunindo residentes e familiares e toda equipe em uma tarde inesquecível.Comemorando uma trajetória marcada pelo acolhimento, respeito e amor ao próximo, oferecendo aos nossos idosos um ambiente digno, humano e cheio de carinho.</p>
 
         <h3>Uma Celebração Especial</h3>
         <p>O evento começou às 20h com um jantar especial preparado pela nossa equipe de nutrição e cozinha. O cardápio incluiu pratos tradicionais da data, todos adaptados para as necessidades dietéticas de nossos residentes:</p>
