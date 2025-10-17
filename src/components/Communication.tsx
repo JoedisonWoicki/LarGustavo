@@ -115,7 +115,7 @@ Também registramos nossa profunda gratidão aos parceiros que contribuíram par
 </p>
         <ul>
           <li>Marquespan</li>
-          <li>Arroz à grega</li>
+          <li>Madelena Bolos</li>
           <li>Farofa especial</li>
           <li>Saladas variadas</li>
           <li>Sobremesas: rabanada, salada de frutas e sorvete</li>
