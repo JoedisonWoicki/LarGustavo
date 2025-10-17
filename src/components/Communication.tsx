@@ -116,7 +116,8 @@ Também registramos nossa profunda gratidão aos parceiros que contribuíram par
         <ul>
           <li>Marquespan</li>
           <li>Madelena Bolos</li>
-          <li>Instituto Jardim Europa</li>
+          <li>Instituto Jardim Europa / Confraria Feminina do Jardim Europa
+</li>
           <li>Saladas variadas</li>
           <li>Sobremesas: rabanada, salada de frutas e sorvete</li>
         </ul>
